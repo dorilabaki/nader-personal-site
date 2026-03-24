@@ -24,7 +24,7 @@ const socials = [
     name: "Instagram",
     handle: "@nader_al_najjer",
     description: "Behind the scenes",
-    url: "https://www.instagram.com/nader_al_najjer/",
+    url: "https://www.instagram.com/nadernajjar/",
     icon: InstagramIcon,
   },
   {

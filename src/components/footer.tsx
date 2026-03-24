@@ -38,7 +38,7 @@ export function Footer() {
                   icon: <YoutubeIcon size={14} />,
                 },
                 {
-                  href: "https://www.instagram.com/nader_al_najjer/",
+                  href: "https://www.instagram.com/nadernajjar/",
                   icon: <InstagramIcon size={14} />,
                 },
                 {
