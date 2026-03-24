@@ -72,6 +72,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
+                { href: "/about", label: "About Nader" },
                 { href: "/story", label: "My Story" },
                 { href: "/timeline", label: "Timeline" },
                 { href: "/feed", label: "Feed" },
