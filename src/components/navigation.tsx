@@ -20,20 +20,26 @@ export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-border">
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-bg/60 backdrop-blur-2xl border-b border-border">
+      <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-white font-bold text-sm transition-transform group-hover:scale-105">
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative w-9 h-9 rounded-lg bg-accent flex items-center justify-center text-white font-bold text-sm overflow-hidden transition-transform group-hover:scale-105">
             N
+            <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent" />
           </div>
-          <span className="font-semibold text-foreground tracking-tight">
-            Nader Alnajjar
-          </span>
+          <div className="flex flex-col">
+            <span className="font-semibold text-sm text-text-primary tracking-tight leading-none">
+              Nader
+            </span>
+            <span className="text-[10px] text-text-muted tracking-widest uppercase leading-none mt-0.5">
+              Alnajjar
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-0.5">
           {links.map((link) => {
             const isActive =
               link.href === "/"
@@ -43,10 +49,10 @@ export function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-3.5 py-2 rounded-lg text-[13px] font-medium transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? "text-accent bg-accent-light"
-                    : "text-muted hover:text-foreground hover:bg-surface-alt"
+                    ? "text-accent bg-accent-subtle"
+                    : "text-text-secondary hover:text-text-primary hover:bg-bg-elevated"
                 }`}
               >
                 {link.label}
@@ -58,7 +64,7 @@ export function Navigation() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 rounded-lg hover:bg-surface-alt transition-colors"
+          className="md:hidden p-2 rounded-lg hover:bg-bg-elevated transition-colors text-text-secondary cursor-pointer"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -67,7 +73,7 @@ export function Navigation() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-surface px-6 py-4 space-y-1">
+        <div className="md:hidden border-t border-border bg-bg-elevated px-6 py-4 space-y-1">
           {links.map((link) => {
             const isActive =
               link.href === "/"
@@ -78,10 +84,10 @@ export function Navigation() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
                   isActive
-                    ? "text-accent bg-accent-light"
-                    : "text-muted hover:text-foreground hover:bg-surface-alt"
+                    ? "text-accent bg-accent-subtle"
+                    : "text-text-secondary hover:text-text-primary hover:bg-bg-card"
                 }`}
               >
                 {link.label}
