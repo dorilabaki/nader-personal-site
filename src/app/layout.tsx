@@ -79,7 +79,6 @@ const personSchema = {
   sameAs: [
     "https://www.linkedin.com/in/nader-alnajjar/",
     "https://www.instagram.com/nadernajjar/",
-    "https://www.youtube.com/@naderalnajjar",
     "https://www.leverbrands.com",
     "https://resources.leverbrands.com/newsletter",
   ],

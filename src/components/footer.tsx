@@ -34,7 +34,7 @@ export function Footer() {
                   icon: <LinkedinIcon size={14} />,
                 },
                 {
-                  href: "https://www.youtube.com/@naderalnajjar",
+                  href: "#",
                   icon: <YoutubeIcon size={14} />,
                 },
                 {

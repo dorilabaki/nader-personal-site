@@ -79,16 +79,12 @@ export default function FeedPage() {
               Follow on LinkedIn
               <ExternalLink size={12} />
             </a>
-            <a
-              href="https://www.youtube.com/@naderalnajjar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000] text-white rounded-xl text-sm font-medium hover:bg-[#CC0000] transition-colors cursor-pointer"
+            <span
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000]/40 text-white/60 rounded-xl text-sm font-medium cursor-default"
             >
               <YoutubeIcon size={14} />
-              Subscribe on YouTube
-              <ExternalLink size={12} />
-            </a>
+              YouTube Coming Soon
+            </span>
           </div>
         </div>
       </section>
@@ -141,15 +137,10 @@ export default function FeedPage() {
             <p className="text-text-secondary text-sm max-w-md mx-auto mb-6">
               Video content is on the way. Subscribe to be the first to know.
             </p>
-            <a
-              href="https://www.youtube.com/@naderalnajjar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000] text-white rounded-xl text-sm font-medium hover:bg-[#CC0000] transition-colors cursor-pointer"
-            >
+            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000]/40 text-white/60 rounded-xl text-sm font-medium cursor-default">
               <YoutubeIcon size={14} />
-              Subscribe
-            </a>
+              Coming Soon
+            </span>
           </div>
         </div>
 

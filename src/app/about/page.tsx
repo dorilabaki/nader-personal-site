@@ -434,8 +434,8 @@ export default function AboutPage() {
                   url: "https://www.instagram.com/nadernajjar/",
                 },
                 {
-                  label: "YouTube",
-                  url: "https://www.youtube.com/@naderalnajjar",
+                  label: "YouTube (Coming Soon)",
+                  url: "#",
                 },
                 {
                   label: "Free LinkedIn Starter Pack",

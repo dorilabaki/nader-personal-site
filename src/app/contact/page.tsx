@@ -30,8 +30,8 @@ const socials = [
   {
     name: "YouTube",
     handle: "@naderalnajjar",
-    description: "Video content coming soon",
-    url: "https://www.youtube.com/@naderalnajjar",
+    description: "Coming soon",
+    url: "#",
     icon: YoutubeIcon,
   },
   {
