@@ -20,7 +20,7 @@ export function Footer() {
             <p className="text-sm leading-relaxed max-w-sm">
               Co-founder of Lever Brands. Helping ambitious founders build
               authority, attract opportunities, and scale influence through
-              personal branding and AI visibility.
+              personal branding.
             </p>
             <div className="flex gap-3 mt-6">
               <a

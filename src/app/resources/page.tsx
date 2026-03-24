@@ -36,9 +36,9 @@ const resources = [
     featured: false,
   },
   {
-    title: "AI Visibility Guide",
+    title: "Personal Brand Playbook",
     description:
-      "How to get your brand recommended by AI search engines like ChatGPT, Perplexity, and Claude. The 8-step framework for Answer Engine Optimisation.",
+      "The step-by-step guide to building a personal brand that generates inbound leads, speaking opportunities, and partnerships. The exact framework we use at LeverBrands.",
     type: "Guide",
     icon: Lightbulb,
     color: "bg-purple-50 text-purple-600",

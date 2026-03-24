@@ -90,7 +90,7 @@ export default function Home() {
 
             <p className="text-lg md:text-xl text-muted leading-relaxed max-w-xl mb-10">
               I help ambitious founders build leverage through personal brand and
-              AI visibility. Turning expertise into authority, and attention into
+              personal brand. Turning expertise into authority, and attention into
               revenue.
             </p>
 

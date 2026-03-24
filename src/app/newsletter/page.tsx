@@ -37,7 +37,7 @@ const topics = [
   "Newsletter and funnel design",
   "Personal brand positioning",
   "Case studies and breakdowns",
-  "AEO and AI visibility",
+  "Scaling a personal brand agency",
   "Scaling an agency",
 ];
 

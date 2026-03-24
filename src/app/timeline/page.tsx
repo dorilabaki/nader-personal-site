@@ -87,10 +87,10 @@ const timeline = [
   },
   {
     year: "2026",
-    title: "AI Visibility & AEO",
-    subtitle: "The next frontier",
+    title: "Building Leverage at Scale",
+    subtitle: "Newsletter, community, and the next chapter",
     description:
-      "Building at the intersection of personal branding and AI search. Answer Engine Optimisation. Making sure founders show up in ChatGPT, Perplexity, Claude, and Gemini. The window is wide open.",
+      "Launching the Building Leverage newsletter, expanding the team, and doubling down on helping founders turn personal brand into their most valuable business asset. The window is wide open.",
     icon: TrendingUp,
     color: "bg-amber-50 text-amber-600",
     tag: "Now",

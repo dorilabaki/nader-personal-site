@@ -190,21 +190,18 @@ export default function StoryPage() {
             <h2 className="text-2xl font-bold mt-2 mb-4">What's Next</h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                The game is shifting. AI search engines like ChatGPT,
-                Perplexity, and Claude are changing how people find information.
-                The founders and brands that show up in those answers will win.
-                The ones that don't will be invisible to an entirely new
-                generation of buyers.
+                The playbook works. But we're not done. The founders who invest
+                in personal brand now are building leverage that compounds for
+                years. The ones who wait will spend 10x more trying to catch up.
               </p>
               <p>
-                I'm building at the intersection of personal branding and AI
-                visibility. Answer Engine Optimisation. Making sure the right
-                people don't just see you - they hear about you from the AI
-                their customers trust.
+                I'm focused on scaling LeverBrands, building the Building
+                Leverage newsletter into the go-to resource for founder-led
+                growth, and helping more ambitious people turn their expertise
+                into authority.
               </p>
               <p>
-                This is 2003 SEO all over again. And the window won't stay open
-                forever.
+                The window is wide open. And I'm just getting started.
               </p>
             </div>
           </div>

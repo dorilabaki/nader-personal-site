@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nader Alnajjar - Building Leverage Through AI & Personal Brand",
+  title: "Nader Alnajjar - Building Leverage Through Personal Brand",
   description:
     "Founder of LeverBrands. Helping founders build authority, attract opportunities, and scale influence. 500M+ impressions. From aerospace engineer to personal branding.",
   openGraph: {
     title: "Nader Alnajjar - Building Leverage",
     description:
-      "Founder of LeverBrands. 40K+ followers. 500M+ impressions. Helping founders build leverage through personal brand and AI.",
+      "Founder of LeverBrands. 40K+ followers. 500M+ impressions. Helping founders build leverage through personal brand.",
     type: "website",
   },
 };
