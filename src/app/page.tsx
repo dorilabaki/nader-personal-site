@@ -171,11 +171,11 @@ export default function Home() {
                 The Story
               </span>
               <h2 className="font-display text-4xl md:text-5xl mt-4 leading-[1.1]">
-                From rocket
+                Turning invisible
                 <br />
-                science to
+                founders into
                 <br />
-                <span className="italic text-accent">building brands</span>.
+                <span className="italic text-accent">known authorities</span>.
               </h2>
               <Link
                 href="/story"
@@ -193,10 +193,10 @@ export default function Home() {
           {/* Right content */}
           <div className="md:col-span-8 space-y-6 text-text-secondary leading-[1.8] text-[15px]">
             <p>
-              I graduated with a First Class MEng in Aerospace Engineering from
-              the University of Bath. Then spent 5 years as a Quantitative
-              Analyst at M&G, building tools and automations for equity and
-              fixed income teams.
+              Over the last 6 years, I noticed a big problem with how founders
+              build their businesses: most of them are completely invisible.
+              They're good at what they do. REALLY good. But the people who
+              should be buying from them have no idea they exist.
             </p>
             <p>
               During COVID lockdown, my flatmate Chris Donnelly and I started
@@ -237,9 +237,9 @@ export default function Home() {
                   <span className="text-text-primary">London, UK</span>
                 </div>
                 <div>
-                  <span className="text-text-muted block mb-1">Education</span>
+                  <span className="text-text-muted block mb-1">Newsletter</span>
                   <span className="text-text-primary">
-                    MEng Aerospace, Bath
+                    Building Leverage
                   </span>
                 </div>
                 <div>

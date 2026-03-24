@@ -31,7 +31,7 @@ const instrumentSerif = localFont({
 export const metadata: Metadata = {
   title: "Nader Alnajjar - Founder of LeverBrands | Personal Branding for Founders",
   description:
-    "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders. MEng Aerospace Engineering (Bath). 500M+ LinkedIn impressions. $10M+ client revenue driven. Based in London, UK.",
+    "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders. 500M+ LinkedIn impressions. $10M+ client revenue driven. Based in London, UK.",
   openGraph: {
     title: "Nader Alnajjar - Founder of LeverBrands",
     description:

@@ -4,7 +4,7 @@ import { ArrowRight, ArrowUpRight, Quote } from "lucide-react";
 export const metadata = {
   title: "My Story - Nader Alnajjar",
   description:
-    "From aerospace engineering to building LeverBrands. The full story of how a COVID lockdown side project became a 30-person agency.",
+    "How a COVID lockdown side project became a 30-person personal branding agency. The full story of LeverBrands.",
 };
 
 export default function StoryPage() {
@@ -18,14 +18,13 @@ export default function StoryPage() {
             The Story
           </span>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mt-4 mb-6">
-            From rocket science
+            How a side project became
             <br />
-            to <span className="italic text-accent">building leverage</span>.
+            a <span className="italic text-accent">30-person agency</span>.
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
-            How an aerospace engineer and a flatmate with a LinkedIn account
-            accidentally built one of the fastest-growing personal branding
-            agencies in the UK.
+            How two flatmates in East London accidentally built one of the
+            fastest-growing personal branding agencies in the UK.
           </p>
         </div>
       </section>
@@ -39,24 +38,17 @@ export default function StoryPage() {
               <span className="text-xs font-mono text-accent">01</span>
               <div className="flex-1 h-px bg-border" />
             </div>
-            <h2 className="font-display text-3xl mb-6">The Engineer</h2>
+            <h2 className="font-display text-3xl mb-6">Before LeverBrands</h2>
             <div className="space-y-5 text-text-secondary leading-[1.8]">
               <p>I'm Nader. Pronounced like Ladder, but with an N.</p>
               <p>
-                I studied Aerospace Engineering at the University of Bath. Five
-                years. First Class Honours. I learned how to think in systems,
-                break complex problems into components, and build things that
-                work under pressure.
+                I spent 5 years working in finance at M&G plc, building tools
+                and automations for analysts. I learned how to think in systems,
+                take messy data and turn it into clear decisions. To automate the
+                boring stuff so smart people could focus on what mattered.
               </p>
               <p>
-                After graduating in 2019, I joined M&G plc as a Quantitative
-                Analyst. For five years I built tools and automations for equity
-                and fixed income analysts. I learned to take messy data and turn
-                it into clear decisions. To automate the boring stuff so smart
-                people could focus on what mattered.
-              </p>
-              <p>
-                That engineering brain never left. It just found a different
+                That systems thinking never left. It just found a different
                 application.
               </p>
             </div>

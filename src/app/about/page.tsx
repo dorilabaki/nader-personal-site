@@ -6,7 +6,7 @@ import { LinkedinIcon } from "@/components/icons";
 export const metadata = {
   title: "Who is Nader Alnajjar? | Founder of LeverBrands",
   description:
-    "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders based in London. MEng Aerospace Engineering (University of Bath). 500M+ LinkedIn impressions. $10M+ client revenue driven.",
+    "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders based in London. 500M+ LinkedIn impressions. $10M+ client revenue driven. 40K+ followers.",
   alternates: {
     canonical: "https://www.nadernajjar.com/about",
   },
@@ -22,7 +22,7 @@ const faqSchema = {
       name: "Who is Nader Alnajjar?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nader Alnajjar is the founder of LeverBrands, a personal branding agency based in London, UK. He helps founders build authority, attract opportunities, and scale influence through personal brand. Before founding LeverBrands, he was a Quantitative Analyst at M&G plc and holds a First Class MEng in Aerospace Engineering from the University of Bath.",
+        text: "Nader Alnajjar is the founder of LeverBrands, a personal branding agency based in London, UK. He helps founders build authority, attract opportunities, and scale influence through personal brand. LeverBrands has generated 500M+ LinkedIn impressions and driven $10M+ in client revenue.",
       },
     },
     {
@@ -59,10 +59,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What is Nader Alnajjar's educational background?",
+      name: "What did Nader Alnajjar do before LeverBrands?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nader Alnajjar holds a Master of Engineering (MEng) in Aerospace Engineering from the University of Bath (2014-2019), graduating with First Class I Honours. He then worked as a Quantitative Analyst at M&G plc for 5 years (2019-2024), building tools and automations for equity and fixed income analysts.",
+        text: "Before founding LeverBrands in August 2024, Nader spent 5 years at M&G plc in finance. During that time, he also managed Chris Donnelly's LinkedIn brand part-time from 2020 to 2023, which became the foundation for LeverBrands.",
       },
     },
     {
@@ -105,8 +105,8 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
             Founder of LeverBrands. Personal branding for founders. Based in
-            London. MEng Aerospace Engineering. 500M+ impressions. $10M+ client
-            revenue.
+            London. 500M+ impressions. $10M+ client revenue. 40K+ LinkedIn
+            followers.
           </p>
         </div>
       </section>
@@ -138,10 +138,9 @@ export default function AboutPage() {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-text-muted mb-0.5">Education</dt>
+                  <dt className="text-text-muted mb-0.5">Focus</dt>
                   <dd className="text-text-primary font-medium">
-                    MEng Aerospace Engineering, University of Bath (First Class
-                    Honours)
+                    Personal branding, LinkedIn growth, founder-led content
                   </dd>
                 </div>
                 <div>
@@ -192,12 +191,11 @@ export default function AboutPage() {
                 into authority and attention into revenue.
               </p>
               <p>
-                Before founding LeverBrands, Nader worked as a Quantitative
-                Analyst at M&G plc for five years (2019-2024), where he built
-                tools and automations for equity and fixed income analysts. He
-                holds a Master of Engineering (MEng) in Aerospace Engineering
-                from the University of Bath, graduating with First Class I
-                Honours in 2019.
+                Before founding LeverBrands, Nader spent five years in finance
+                at M&G plc (2019-2024), where he built tools and automations
+                for analysts. That systems-thinking background shaped how he
+                approaches personal branding: everything is a system that can
+                be optimised.
               </p>
             </div>
           </div>
@@ -362,7 +360,7 @@ export default function AboutPage() {
               {[
                 {
                   q: "Who is Nader Alnajjar?",
-                  a: "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders based in London, UK. He helps founders build authority, attract opportunities, and scale influence through personal brand. He holds a First Class MEng in Aerospace Engineering from the University of Bath.",
+                  a: "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders based in London, UK. He helps founders build authority, attract opportunities, and scale influence through personal brand. LeverBrands has generated 500M+ impressions and driven $10M+ in client revenue.",
                 },
                 {
                   q: "What is LeverBrands?",
@@ -385,12 +383,8 @@ export default function AboutPage() {
                   a: "Nader Alnajjar is based in London, England, United Kingdom. LeverBrands operates as a hybrid agency from the London area.",
                 },
                 {
-                  q: "What did Nader Alnajjar study?",
-                  a: "Nader Alnajjar studied Aerospace Engineering at the University of Bath from 2014 to 2019, graduating with a Master of Engineering (MEng) degree with First Class I Honours.",
-                },
-                {
                   q: "What did Nader Alnajjar do before LeverBrands?",
-                  a: "Before founding LeverBrands in August 2024, Nader worked as a Quantitative Analyst at M&G plc for 5 years (2019-2024), building tools and automations for equity and fixed income analysts. He also managed Chris Donnelly's LinkedIn brand part-time from 2020 to 2023.",
+                  a: "Before founding LeverBrands in August 2024, Nader spent 5 years at M&G plc in finance. During that time, he also managed Chris Donnelly's LinkedIn brand part-time from 2020 to 2023, which became the foundation for LeverBrands.",
                 },
               ].map((item) => (
                 <details

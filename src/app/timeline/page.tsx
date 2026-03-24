@@ -11,34 +11,16 @@ import {
 export const metadata = {
   title: "Timeline - Nader Alnajjar",
   description:
-    "The key milestones from aerospace engineering to founding LeverBrands.",
+    "The key milestones in building LeverBrands and the Building Leverage brand.",
 };
 
 const timeline = [
-  {
-    year: "2014",
-    title: "University of Bath",
-    subtitle: "Master of Engineering, Aerospace Engineering",
-    description:
-      "Started a 5-year MEng degree at one of the UK's top engineering schools. Learned to think in systems, solve complex problems, and build things under pressure.",
-    icon: GraduationCap,
-    tag: "Education",
-  },
-  {
-    year: "2019",
-    title: "First Class Honours",
-    subtitle: "MEng Aerospace Engineering",
-    description:
-      "Graduated with First Class I Honours. The engineering mindset - breaking problems into components, automating the boring stuff, building systems that scale - never left.",
-    icon: GraduationCap,
-    tag: "Education",
-  },
   {
     year: "2019",
     title: "Quantitative Analyst at M&G plc",
     subtitle: "Full-time, London",
     description:
-      "Joined M&G to build tools and automations for equity and fixed income analysts. Spent 5 years turning messy data into clear decisions and saving teams hours of manual work.",
+      "Spent 5 years building tools and automations for analysts. Learned to think in systems, turn messy data into clear decisions, and automate the boring stuff.",
     icon: Briefcase,
     tag: "Career",
   },
