@@ -8,10 +8,10 @@
   --text-primary: #F5F0E8;
   --text-secondary: #A69E93;
   --text-muted: #6B6460;
-  --accent: #E07830;
-  --accent-hover: #F08A3E;
-  --accent-subtle: rgba(224, 120, 48, 0.12);
-  --accent-glow: rgba(224, 120, 48, 0.06);
+  --accent: #27bd5b;
+  --accent-hover: #36d473;
+  --accent-subtle: rgba(39, 189, 91, 0.12);
+  --accent-glow: rgba(39, 189, 91, 0.06);
   --gold: #FBDA6E;
   --border: rgba(245, 240, 232, 0.08);
   --border-hover: rgba(245, 240, 232, 0.14);

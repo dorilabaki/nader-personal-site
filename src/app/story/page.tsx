@@ -158,7 +158,7 @@ export default function StoryPage() {
             </h2>
             <div data-prose className="space-y-5 text-text-secondary leading-[1.8]">
               <p>We think in three layers:</p>
-              <div data-card-reveal className="bg-bg-elevated rounded-xl border border-border p-6 space-y-5">
+              <div className="bg-bg-elevated rounded-xl border border-border p-6 space-y-5">
                 <div>
                   <span className="font-semibold text-accent">
                     Layer 1: Attention.

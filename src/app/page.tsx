@@ -74,7 +74,7 @@ export default function Home() {
 
       {/* ═══════════════════ HERO ═══════════════════ */}
       <section data-hero className="relative overflow-hidden border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-16 md:pb-24">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left - content */}
             <div data-hero-content>
@@ -209,20 +209,20 @@ export default function Home() {
               employees in under two years. 500M+ impressions. $10M+ in client
               revenue. And we're just getting started.
             </p>
+          </div>
+        </div>
 
-            {/* Nader & Chris */}
-            <div data-image-reveal className="mt-8 relative rounded-2xl overflow-hidden border border-border aspect-[4/3]">
-              <Image
-                src="/nader-and-chris.jpg"
-                alt="Nader Alnajjar and Chris Donnelly - Co-founders of LeverBrands"
-                fill
-                className="object-cover object-[center_25%]"
-              />
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-5 px-6">
-                <p className="text-white text-sm font-medium">Nader Alnajjar & Chris Donnelly</p>
-                <p className="text-white/60 text-xs mt-0.5">Co-founders, LeverBrands</p>
-              </div>
-            </div>
+        {/* Nader & Chris - full width below grid */}
+        <div data-image-reveal className="mt-12 relative rounded-2xl overflow-hidden border border-border max-w-3xl mx-auto aspect-[16/10]">
+          <Image
+            src="/nader-and-chris.jpg"
+            alt="Nader Alnajjar and Chris Donnelly - Co-founders of LeverBrands"
+            fill
+            className="object-cover object-[center_25%]"
+          />
+          <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-5 px-6">
+            <p className="text-white text-sm font-medium">Nader Alnajjar & Chris Donnelly</p>
+            <p className="text-white/60 text-xs mt-0.5">Co-founders, LeverBrands</p>
           </div>
         </div>
       </section>
