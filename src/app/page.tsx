@@ -165,10 +165,10 @@ export default function Home() {
 
       {/* ═══════════════════ ABOUT ═══════════════════ */}
       <section className="max-w-7xl mx-auto px-6 py-28 md:py-36">
-        <div className="grid md:grid-cols-12 gap-16 items-start">
+        <div className="grid md:grid-cols-12 gap-16 items-center">
           {/* Left label */}
           <div className="md:col-span-4">
-            <div className="sticky top-24" data-reveal-left>
+            <div data-reveal-left>
               <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
                 The Story
               </span>
