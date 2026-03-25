@@ -130,6 +130,7 @@ export default function RootLayout({
       className={`${dmSans.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <head>
+        <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
         <Script
           id="person-schema"
           type="application/ld+json"

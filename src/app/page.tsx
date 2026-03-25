@@ -87,6 +87,21 @@ export default function Home() {
           <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-bg to-transparent" />
         </div>
 
+        {/* Desktop headshot - bleeds right and bottom */}
+        <div data-hero-image className="absolute top-0 right-0 bottom-0 w-[55%] hidden md:block pointer-events-none">
+          <div className="absolute -right-[10%] top-[5%] -bottom-[5%] w-[110%]">
+            <Image
+              src="/nader-headshot.png"
+              alt="Nader Alnajjar - Founder of LeverBrands"
+              fill
+              className="object-contain object-right-top drop-shadow-2xl"
+              sizes="60vw"
+              priority
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/40 via-10% to-transparent" />
+        </div>
+
         <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-28">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left - content */}
@@ -127,20 +142,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Desktop */}
-            <div data-hero-image className="relative hidden md:block min-h-[70svh]">
-              <div className="absolute -inset-12">
-                <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[120px] scale-75" />
-                <Image
-                  src="/nader-headshot.png"
-                  alt="Nader Alnajjar - Founder of LeverBrands"
-                  fill
-                  className="object-contain object-center drop-shadow-2xl"
-                  sizes="60vw"
-                  priority
-                />
-              </div>
-            </div>
+            {/* Desktop - spacer for grid */}
+            <div className="hidden md:block" />
           </div>
         </div>
 
