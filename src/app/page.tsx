@@ -88,7 +88,20 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-28">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          {/* Desktop headshot - absolute, right half, bottom-anchored */}
+          <div data-hero-image className="absolute right-0 bottom-0 top-[15%] w-[48%] hidden md:block pointer-events-none">
+            <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[120px] scale-75" />
+            <Image
+              src="/nader-headshot.png"
+              alt="Nader Alnajjar - Founder of LeverBrands"
+              fill
+              className="object-contain object-bottom drop-shadow-2xl"
+              sizes="50vw"
+              priority
+            />
+          </div>
+
+          <div className="md:max-w-[50%]">
             {/* Left - content */}
             <div data-hero-content>
               {/* Headline */}
@@ -124,21 +137,6 @@ export default function Home() {
                   <Mail size={16} className="text-text-muted" />
                   Subscribe to Building Leverage
                 </Link>
-              </div>
-            </div>
-
-            {/* Desktop */}
-            <div data-hero-image className="relative hidden md:block min-h-[70svh]">
-              <div className="absolute -inset-12">
-                <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[120px] scale-75" />
-                <Image
-                  src="/nader-headshot.png"
-                  alt="Nader Alnajjar - Founder of LeverBrands"
-                  fill
-                  className="object-contain object-center drop-shadow-2xl"
-                  sizes="60vw"
-                  priority
-                />
               </div>
             </div>
           </div>
