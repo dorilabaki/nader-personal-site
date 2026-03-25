@@ -14,7 +14,6 @@ import {
 import { ScrollAnimations } from "@/components/scroll-animations";
 
 const stats = [
-  { value: "500M+", label: "Impressions", icon: Eye },
   { value: "40K+", label: "Followers", icon: Users },
   { value: "$10M+", label: "Client Revenue", icon: DollarSign },
   { value: "30+", label: "Team Members", icon: Rocket },
@@ -158,7 +157,7 @@ export default function Home() {
       {/* ═══════════════════ STATS ═══════════════════ */}
       <section className="relative border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-3 gap-8 md:gap-12">
             {stats.map((stat) => (
               <div key={stat.label} data-stat-value className="group">
                 <div className="flex items-center gap-3 mb-3">
@@ -223,7 +222,7 @@ export default function Home() {
             </p>
             <p data-reveal>
               That side project became LeverBrands. We went from 1 person to 30+
-              employees in under two years. 500M+ impressions. $10M+ in client
+              employees in under two years. $10M+ in client
               revenue. And we're just getting started.
             </p>
           </div>

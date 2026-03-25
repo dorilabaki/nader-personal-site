@@ -191,7 +191,7 @@ export default function StoryPage() {
               </div>
               <p>
                 In less than two years, LeverBrands went from just me to 30+
-                employees. We&apos;ve generated 500M+ impressions and driven $10M+ in
+                employees. We&apos;ve driven $10M+ in
                 client revenue. And we&apos;re just getting started.
               </p>
             </div>

@@ -56,7 +56,7 @@ const timeline = [
   {
     year: "2025",
     title: "30+ Team Members",
-    subtitle: "500M+ impressions, $10M+ client revenue",
+    subtitle: "$10M+ client revenue driven",
     description:
       "LeverBrands scaled from 1 to 30+ employees in under two years. Rohan Sheth: 2K to 100K followers in 10 months. B2B SaaS: 6 inbound leads/week with no ads.",
     icon: Users,

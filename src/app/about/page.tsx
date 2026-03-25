@@ -108,7 +108,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
             Founder of LeverBrands. Personal branding for founders. Based in
-            London. 500M+ impressions. $10M+ client revenue. 40K+ LinkedIn
+            London. $10M+ client revenue. 40K+ LinkedIn
             followers.
           </p>
         </div>
@@ -349,7 +349,7 @@ export default function AboutPage() {
                 },
                 {
                   title: "Founder-Led Growth",
-                  description: "Helping founders use personal brand as their primary growth channel. 500M+ impressions and $10M+ client revenue driven.",
+                  description: "Helping founders use personal brand as their primary growth channel. $10M+ client revenue driven.",
                 },
                 {
                   title: "AI Tools for Content",
