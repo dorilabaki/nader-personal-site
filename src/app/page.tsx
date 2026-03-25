@@ -72,18 +72,19 @@ export default function Home() {
       <ScrollAnimations />
 
       {/* ═══════════════════ HERO ═══════════════════ */}
-      <section data-hero className="relative overflow-hidden border-b border-border">
+      <section data-hero className="relative overflow-hidden border-b border-border min-h-[100svh] md:min-h-0 flex flex-col justify-center">
         {/* Mobile background headshot */}
         <div className="absolute inset-0 md:hidden pointer-events-none">
           <Image
             src="/nader-headshot.png"
             alt=""
             fill
-            className="object-contain object-[center_top] opacity-40"
+            className="object-cover object-[center_15%] opacity-30"
             aria-hidden="true"
             sizes="100vw"
             priority
           />
+          <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-bg to-transparent" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-28">
