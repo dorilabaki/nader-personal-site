@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     }
 
     await resend.emails.send({
-      from: "Nader's Website <onboarding@resend.dev>",
+      from: "Nader's Website <contact@nadernajjar.com>",
       to: "nader@leverbrands.co.uk",
       replyTo: email,
       subject: `[Website] ${subject || "New message"} - ${name}`,
