@@ -1,5 +1,6 @@
 import { Mail, CheckCircle, ArrowRight, Users, Zap, Clock } from "lucide-react";
 import Link from "next/link";
+import { PageAnimations } from "@/components/page-animations";
 
 export const metadata = {
   title: "Building Leverage Newsletter - Nader Alnajjar",
@@ -44,10 +45,11 @@ const topics = [
 export default function NewsletterPage() {
   return (
     <div>
+      <PageAnimations />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-accent/[0.03] blur-[120px]" />
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+        <div data-page-hero className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div>
               <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-border bg-bg-elevated/60 text-[13px] text-text-secondary mb-8">
@@ -107,7 +109,7 @@ export default function NewsletterPage() {
 
       {/* Benefits */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+        <div data-stagger-cards className="grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
           {benefits.map((benefit) => (
             <div key={benefit.title} className="bg-bg-card p-10">
               <benefit.icon

@@ -102,7 +102,7 @@ export default function Home() {
 
             {/* Headline */}
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6 animate-fade-up" style={{ animationDelay: "100ms" }}>
-              Most founders
+              Most Founders
               <br />
               are <span className="italic text-accent">invisible</span>.
               <br />
@@ -173,11 +173,11 @@ export default function Home() {
                 The Story
               </span>
               <h2 className="font-display text-4xl md:text-5xl mt-4 leading-[1.1]">
-                Turning invisible
+                Turning Invisible
                 <br />
-                founders into
+                Founders Into
                 <br />
-                <span className="italic text-accent">known authorities</span>.
+                <span className="italic text-accent">Known Authorities</span>.
               </h2>
               <Link
                 href="/story"
@@ -212,12 +212,12 @@ export default function Home() {
             </p>
 
             {/* Nader & Chris */}
-            <div data-image-reveal className="mt-8 relative rounded-2xl overflow-hidden border border-border aspect-[16/10]">
+            <div data-image-reveal className="mt-8 relative rounded-2xl overflow-hidden border border-border aspect-[4/3]">
               <Image
                 src="/nader-and-chris.jpg"
                 alt="Nader Alnajjar and Chris Donnelly - Co-founders of LeverBrands"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[center_25%]"
               />
               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-5 px-6">
                 <p className="text-white text-sm font-medium">Nader Alnajjar & Chris Donnelly</p>
@@ -239,10 +239,10 @@ export default function Home() {
               The System
             </span>
             <h2 className="font-display text-4xl md:text-5xl mt-4 leading-[1.1]">
-              Three layers that turn{" "}
-              <span className="italic text-accent">attention</span>
+              Three Layers That Turn{" "}
+              <span className="italic text-accent">Attention</span>
               <br />
-              into money in your pocket.
+              Into Money in Your Pocket.
             </h2>
             <p className="text-text-secondary mt-6 leading-relaxed">
               Most agencies post for you and call it a day. We build the
@@ -287,9 +287,9 @@ export default function Home() {
               Results
             </span>
             <h2 className="font-display text-4xl md:text-5xl mt-4 leading-[1.1]">
-              I'll let the
+              I'll Let the
               <br />
-              numbers <span className="italic text-accent">speak</span>.
+              Numbers <span className="italic text-accent">Speak</span>.
             </h2>
           </div>
 
@@ -327,9 +327,9 @@ export default function Home() {
             Building Leverage
           </span>
           <h2 className="font-display text-4xl md:text-5xl mt-4 leading-[1.1] mb-6">
-            The newsletter for founders
+            The Newsletter for Founders
             <br />
-            who want <span className="italic text-accent">systems</span>.
+            Who Want <span className="italic text-accent">Systems</span>.
           </h2>
           <p className="text-text-secondary mb-10 max-w-md mx-auto">
             Every Sunday. The exact tools, processes, and breakdowns we use at

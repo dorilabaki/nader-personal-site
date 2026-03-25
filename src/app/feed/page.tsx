@@ -1,6 +1,7 @@
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { LinkedinIcon, YoutubeIcon } from "@/components/icons";
 import Link from "next/link";
+import { PageAnimations } from "@/components/page-animations";
 
 export const metadata = {
   title: "Feed - Nader Alnajjar",
@@ -54,15 +55,16 @@ const linkedinPosts = [
 export default function FeedPage() {
   return (
     <div>
+      <PageAnimations />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/[0.04] rounded-full blur-[120px]" />
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+        <div data-page-hero className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
             Feed
           </span>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mt-4 mb-6">
-            Latest <span className="italic text-accent">content</span>.
+            Latest <span className="italic text-accent">Content</span>.
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl mb-8">
             What I'm posting, sharing, and building in public.
@@ -96,7 +98,7 @@ export default function FeedPage() {
           <h2 className="font-display text-2xl">Recent LinkedIn Posts</h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
+        <div data-stagger-cards className="grid sm:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
           {linkedinPosts.map((post, index) => (
             <a
               key={index}
@@ -147,7 +149,7 @@ export default function FeedPage() {
         {/* CTA */}
         <div className="mt-24 pt-12 border-t border-border text-center">
           <h3 className="font-display text-3xl mb-4">
-            Want the full playbook?
+            Want the Full Playbook?
           </h3>
           <p className="text-text-secondary mb-8 text-sm max-w-md mx-auto">
             Building Leverage goes deeper. Every Sunday.

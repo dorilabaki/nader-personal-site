@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { PageAnimations } from "@/components/page-animations";
 import { LinkedinIcon } from "@/components/icons";
 
 export const metadata = {
@@ -88,6 +89,7 @@ const faqSchema = {
 export default function AboutPage() {
   return (
     <div>
+      <PageAnimations />
       <Script
         id="faq-schema"
         type="application/ld+json"
@@ -97,7 +99,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute top-0 left-0 w-96 h-96 bg-accent/[0.04] rounded-full blur-[120px]" />
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+        <div data-page-hero className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
             About
           </span>
@@ -340,6 +342,7 @@ export default function AboutPage() {
           <div>
             <h2 className="font-display text-3xl mb-4">
               Expertise and Focus Areas
+
             </h2>
             <div className="text-text-secondary leading-[1.8]">
               <p className="mb-4">
@@ -476,7 +479,7 @@ export default function AboutPage() {
         {/* CTA */}
         <div className="mt-24 pt-12 border-t border-border text-center">
           <h3 className="font-display text-3xl mb-4">
-            Want to work with Nader?
+            Want to Work With Nader?
           </h3>
           <p className="text-text-secondary mb-8 text-sm max-w-md mx-auto">
             DM on LinkedIn or use the contact form.

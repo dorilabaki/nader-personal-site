@@ -5,6 +5,7 @@ import {
   Send,
 } from "lucide-react";
 import { LinkedinIcon, YoutubeIcon, InstagramIcon } from "@/components/icons";
+import { PageAnimations } from "@/components/page-animations";
 
 export const metadata = {
   title: "Contact - Nader Alnajjar",
@@ -46,15 +47,16 @@ const socials = [
 export default function ContactPage() {
   return (
     <div>
+      <PageAnimations />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/[0.04] rounded-full blur-[120px]" />
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+        <div data-page-hero className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
             Contact
           </span>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mt-4 mb-6">
-            Let's build some
+            Let&apos;s Build Some
             <br />
             <span className="italic text-accent">leverage</span>.
           </h1>

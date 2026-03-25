@@ -8,6 +8,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import Link from "next/link";
+import { PageAnimations } from "@/components/page-animations";
 
 export const metadata = {
   title: "Free Resources - Nader Alnajjar",
@@ -57,16 +58,17 @@ const resources = [
 export default function ResourcesPage() {
   return (
     <div>
+      <PageAnimations />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute top-0 left-0 w-96 h-96 bg-accent/[0.04] rounded-full blur-[120px]" />
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+        <div data-page-hero className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
             Resources
           </span>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mt-4 mb-6">
-            Free <span className="italic text-accent">tools</span> to start
-            building.
+            Free <span className="italic text-accent">Tools</span> to Start
+            Building.
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
             Guides, templates, and cheat sheets. Designed to give you a head
@@ -151,7 +153,7 @@ export default function ResourcesPage() {
         {/* CTA */}
         <div className="mt-24 pt-12 border-t border-border text-center">
           <h3 className="font-display text-3xl mb-4">
-            Want more than a cheat sheet?
+            Want More Than a Cheat Sheet?
           </h3>
           <p className="text-text-secondary mb-8 text-sm max-w-md mx-auto">
             Building Leverage delivers the full system every Sunday.

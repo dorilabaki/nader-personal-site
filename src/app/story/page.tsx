@@ -22,9 +22,9 @@ export default function StoryPage() {
             The Story
           </span>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mt-4 mb-6">
-            How a side project became
+            How a Side Project Became
             <br />
-            a <span className="italic text-accent">30-person agency</span>.
+            a <span className="italic text-accent">30-Person Agency</span>.
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
             How two flatmates in East London accidentally built one of the
@@ -121,6 +121,7 @@ export default function StoryPage() {
             </div>
             <h2 data-chapter className="font-display text-3xl mb-6">
               The Birth of LeverBrands
+
             </h2>
             <div data-prose className="space-y-5 text-text-secondary leading-[1.8]">
               <p>
@@ -238,7 +239,7 @@ export default function StoryPage() {
         {/* CTA */}
         <div data-reveal className="mt-24 pt-12 border-t border-border text-center">
           <h3 className="font-display text-3xl mb-4">
-            Want to build some leverage?
+            Want to Build Some Leverage?
           </h3>
           <p className="text-text-secondary mb-8 max-w-md mx-auto text-sm">
             Whether you want to work together or just stay in the loop, there&apos;s

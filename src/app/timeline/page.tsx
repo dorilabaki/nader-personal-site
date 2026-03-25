@@ -1,12 +1,12 @@
 import Link from "next/link";
 import {
-  GraduationCap,
   Briefcase,
   Rocket,
   Users,
   TrendingUp,
   ArrowRight,
 } from "lucide-react";
+import { PageAnimations } from "@/components/page-animations";
 
 export const metadata = {
   title: "Timeline - Nader Alnajjar",
@@ -77,15 +77,17 @@ const timeline = [
 export default function TimelinePage() {
   return (
     <div>
+      <PageAnimations />
+
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/[0.04] rounded-full blur-[120px]" />
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+        <div data-page-hero className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
             Timeline
           </span>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mt-4 mb-6">
-            The <span className="italic text-accent">milestones</span>.
+            The <span className="italic text-accent">Milestones</span>.
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
             From lecture halls to boardrooms. Every chapter built on the last.
@@ -99,7 +101,7 @@ export default function TimelinePage() {
           {/* Vertical line */}
           <div className="absolute left-6 top-0 bottom-0 w-px bg-border" />
 
-          <div className="space-y-0">
+          <div data-stagger-list className="space-y-0">
             {timeline.map((item, index) => (
               <div key={index} className="relative flex gap-8 group">
                 {/* Node */}
@@ -141,8 +143,8 @@ export default function TimelinePage() {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 pt-12 border-t border-border text-center">
-          <h3 className="font-display text-3xl mb-4">The next chapter?</h3>
+        <div data-reveal className="mt-16 pt-12 border-t border-border text-center">
+          <h3 className="font-display text-3xl mb-4">The Next Chapter?</h3>
           <p className="text-text-secondary mb-8 text-sm">
             It might involve working together.
           </p>
@@ -150,7 +152,7 @@ export default function TimelinePage() {
             href="/contact"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-colors cursor-pointer"
           >
-            Let's Talk
+            Let&apos;s Talk
             <ArrowRight size={16} />
           </Link>
         </div>
