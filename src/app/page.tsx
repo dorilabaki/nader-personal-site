@@ -213,12 +213,12 @@ export default function Home() {
         </div>
 
         {/* Nader & Chris - full width below grid */}
-        <div data-image-reveal className="mt-12 relative rounded-2xl overflow-hidden border border-border max-w-3xl mx-auto aspect-[16/10]">
+        <div data-image-reveal className="mt-12 relative rounded-2xl overflow-hidden border border-border max-w-3xl mx-auto aspect-[3/2]">
           <Image
             src="/nader-and-chris.jpg"
             alt="Nader Alnajjar and Chris Donnelly - Co-founders of LeverBrands"
             fill
-            className="object-cover object-[center_25%]"
+            className="object-cover object-center"
           />
           <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-5 px-6">
             <p className="text-white text-sm font-medium">Nader Alnajjar & Chris Donnelly</p>
