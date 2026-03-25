@@ -121,6 +121,21 @@ export default function Home() {
             </div>
 
             {/* Right - headshot (transparent BG, blends with page) */}
+            {/* Mobile */}
+            <div data-hero-image className="relative md:hidden -mx-6 -mb-16">
+              <div className="relative h-[400px]">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] rounded-full bg-accent/[0.08] blur-[80px]" />
+                <Image
+                  src="/nader-headshot.png"
+                  alt="Nader Alnajjar - Founder of LeverBrands"
+                  fill
+                  className="object-contain object-bottom drop-shadow-2xl"
+                  priority
+                />
+                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-bg to-transparent" />
+              </div>
+            </div>
+            {/* Desktop */}
             <div data-hero-image className="relative hidden md:block -mt-16 -mb-24">
               <div className="relative h-[110%] min-h-[550px]">
                 <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[80px] scale-90" />
