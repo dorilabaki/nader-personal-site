@@ -100,12 +100,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://resources.leverbrands.com/work-with-us"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-text-secondary hover:text-text-primary transition-colors cursor-pointer"
                 >
                   Get in Touch
-                </Link>
+                </a>
               </li>
               <li>
                 <a

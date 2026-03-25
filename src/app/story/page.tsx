@@ -247,7 +247,7 @@ export default function StoryPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/contact"
+              href="https://resources.leverbrands.com/work-with-us" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-colors cursor-pointer"
             >
               Get in Touch

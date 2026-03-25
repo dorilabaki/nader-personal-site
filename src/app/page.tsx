@@ -101,13 +101,15 @@ export default function Home() {
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "300ms" }}>
-                <Link
-                  href="/contact"
+                <a
+                  href="https://resources.leverbrands.com/work-with-us"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                 >
                   Work With Me
                   <ArrowRight size={16} />
-                </Link>
+                </a>
                 <Link
                   href="/newsletter"
                   className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-border text-text-primary rounded-xl font-medium text-sm hover:border-border-hover hover:bg-bg-elevated transition-all cursor-pointer"

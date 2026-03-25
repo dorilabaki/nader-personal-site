@@ -70,115 +70,31 @@ export default function ContactPage() {
       {/* Contact Grid */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-16">
-          {/* Left: Form */}
+          {/* Left: Work With Me */}
           <div>
-            <h2 className="font-display text-2xl mb-2">Send a Message</h2>
-            <p className="text-text-secondary text-sm mb-8">
-              Fill out the form and I'll get back to you within 48 hours.
+            <h2 className="font-display text-2xl mb-2">Work With Me</h2>
+            <p className="text-text-secondary text-sm mb-6">
+              Ready to build your personal brand? Fill out the form and I'll get back to you within 48 hours.
             </p>
+            <a
+              href="https://resources.leverbrands.com/work-with-us"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+            >
+              <Send size={16} />
+              Start the Conversation
+            </a>
 
-            {/*
-              GoHighLevel Integration:
-              Replace form action with your GHL webhook endpoint.
-            */}
-            <form className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label
-                    htmlFor="firstName"
-                    className="block text-sm font-medium text-text-primary mb-1.5"
-                  >
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors"
-                    placeholder="Nader"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="lastName"
-                    className="block text-sm font-medium text-text-primary mb-1.5"
-                  >
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors"
-                    placeholder="Alnajjar"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-text-primary mb-1.5"
-                >
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors"
-                  placeholder="you@company.com"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="subject"
-                  className="block text-sm font-medium text-text-primary mb-1.5"
-                >
-                  What's this about?
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors cursor-pointer"
-                >
-                  <option value="">Select a topic</option>
-                  <option value="work-together">Working with LeverBrands</option>
-                  <option value="speaking">Speaking / Podcast</option>
-                  <option value="collaboration">Collaboration</option>
-                  <option value="other">Something Else</option>
-                </select>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-text-primary mb-1.5"
-                >
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows={5}
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors resize-y"
-                  placeholder="Tell me about your goals..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-colors cursor-pointer"
+            <div className="mt-10 pt-8 border-t border-border">
+              <h3 className="font-semibold text-text-primary text-sm mb-4">Or email directly</h3>
+              <a
+                href="mailto:nader@leverbrands.com"
+                className="text-sm text-accent hover:underline"
               >
-                <Send size={16} />
-                Send Message
-              </button>
-            </form>
+                nader@leverbrands.com
+              </a>
+            </div>
           </div>
 
           {/* Right: Social */}

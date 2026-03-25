@@ -32,25 +32,25 @@ const resources = [
       "Generate scroll-stopping hooks for your LinkedIn posts instantly. Powered by proven frameworks that get clicks.",
     type: "Tool",
     icon: Sparkles,
-    url: "https://resources.leverbrands.co.uk/hook-generator",
+    url: "https://resources.leverbrands.com/hook-generator",
     featured: false,
   },
   {
-    title: "Personal Brand Playbook",
+    title: "Work With Us",
     description:
-      "The step-by-step guide to building a personal brand that generates inbound leads, speaking opportunities, and partnerships.",
-    type: "Guide",
+      "Ready to build your personal brand? Tell us about your goals and we'll show you how LeverBrands can help.",
+    type: "Application",
     icon: Lightbulb,
-    url: "#",
+    url: "https://resources.leverbrands.com/work-with-us",
     featured: false,
   },
   {
-    title: "Content Calendar Template",
+    title: "Building Leverage Newsletter",
     description:
-      "The exact content planning system we use at LeverBrands. Map out 30 days of LinkedIn content.",
-    type: "Template",
+      "The weekly newsletter for founders who want systems. Every Sunday. 2,000+ founders read it.",
+    type: "Newsletter",
     icon: BookOpen,
-    url: "#",
+    url: "https://resources.leverbrands.com/newsletter",
     featured: false,
   },
 ];
@@ -167,7 +167,7 @@ export default function ResourcesPage() {
               <ArrowRight size={16} />
             </Link>
             <Link
-              href="/contact"
+              href="https://resources.leverbrands.com/work-with-us" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-border rounded-xl font-medium text-sm text-text-primary hover:border-border-hover hover:bg-bg-elevated transition-all cursor-pointer"
             >
               Work With Me
