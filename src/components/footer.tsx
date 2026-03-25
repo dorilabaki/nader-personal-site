@@ -9,18 +9,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center text-white font-bold text-sm">
-                N
-              </div>
-              <div className="flex flex-col">
-                <span className="font-semibold text-sm text-text-primary tracking-tight leading-none">
-                  Nader
-                </span>
-                <span className="text-[10px] text-text-muted tracking-widest uppercase leading-none mt-0.5">
-                  Alnajjar
-                </span>
-              </div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="font-semibold text-sm text-text-primary tracking-tight">
+                Nader
+              </span>
+              <span className="text-[10px] text-text-muted tracking-widest uppercase">
+                Alnajjar
+              </span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed max-w-sm">
               Co-founder of Lever Brands. Helping ambitious founders build

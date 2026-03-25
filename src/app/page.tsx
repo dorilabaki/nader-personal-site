@@ -209,17 +209,16 @@ export default function Home() {
             </p>
 
             {/* Nader & Chris */}
-            <div className="mt-8 relative rounded-2xl overflow-hidden border border-border">
+            <div className="mt-8 relative rounded-2xl overflow-hidden border border-border aspect-[16/10]">
               <Image
                 src="/nader-and-chris.jpg"
                 alt="Nader Alnajjar and Chris Donnelly - Co-founders of LeverBrands"
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover object-top"
               />
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-5 px-6">
                 <p className="text-white text-sm font-medium">Nader Alnajjar & Chris Donnelly</p>
-                <p className="text-white/60 text-xs">Co-founders, LeverBrands</p>
+                <p className="text-white/60 text-xs mt-0.5">Co-founders, LeverBrands</p>
               </div>
             </div>
           </div>

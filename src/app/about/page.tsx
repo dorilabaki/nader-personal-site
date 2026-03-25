@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Script from "next/script";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { LinkedinIcon } from "@/components/icons";
@@ -223,6 +224,15 @@ export default function AboutPage() {
                 approach to other founders. The agency grew from 1 person to 30+
                 employees in under two years.
               </p>
+              <div className="rounded-2xl overflow-hidden border border-border mt-6">
+                <Image
+                  src="/nader-office-middle.jpg"
+                  alt="Nader Alnajjar and Chris Donnelly working together"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
           </div>
 
@@ -265,6 +275,15 @@ export default function AboutPage() {
                 followers into paying clients. The newsletter has 2,000+ weekly
                 readers.
               </p>
+              <div className="rounded-2xl overflow-hidden border border-border mt-6">
+                <Image
+                  src="/nader-office-top.jpg"
+                  alt="Nader Alnajjar working on strategy"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
           </div>
 

@@ -88,13 +88,13 @@ export default function StoryPage() {
             </div>
           </div>
 
-          {/* Behind the scenes */}
+          {/* Behind the scenes - team collaboration */}
           <div className="rounded-2xl overflow-hidden border border-border">
             <Image
-              src="/nader-office.jpg"
-              alt="Nader Alnajjar working at LeverBrands office"
-              width={800}
-              height={600}
+              src="/nader-office-bottom.jpg"
+              alt="Nader Alnajjar and team collaborating at LeverBrands"
+              width={1200}
+              height={500}
               className="w-full h-auto object-cover"
             />
           </div>
@@ -193,21 +193,6 @@ export default function StoryPage() {
             </div>
           </div>
 
-          {/* Rory Sutherland */}
-          <div className="relative rounded-2xl overflow-hidden border border-border">
-            <Image
-              src="/nader-and-rory.png"
-              alt="Nader Alnajjar with Rory Sutherland, Vice Chairman of Ogilvy"
-              width={800}
-              height={800}
-              className="w-full h-auto object-cover"
-            />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-              <p className="text-white text-sm font-medium">With Rory Sutherland</p>
-              <p className="text-white/60 text-xs">Vice Chairman of Ogilvy</p>
-            </div>
-          </div>
-
           {/* Chapter 5 */}
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -231,15 +216,19 @@ export default function StoryPage() {
             </div>
           </div>
 
-          {/* Dream photo */}
-          <div className="rounded-2xl overflow-hidden border border-border">
+          {/* Rory Sutherland */}
+          <div className="relative rounded-2xl overflow-hidden border border-border">
             <Image
-              src="/nader-dream.png"
-              alt="Nader Alnajjar building the dream"
+              src="/nader-and-rory.png"
+              alt="Nader Alnajjar with Rory Sutherland, Vice Chairman of Ogilvy"
               width={800}
-              height={1000}
+              height={800}
               className="w-full h-auto object-cover"
             />
+            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+              <p className="text-white text-sm font-medium">With Rory Sutherland</p>
+              <p className="text-white/60 text-xs">Vice Chairman of Ogilvy</p>
+            </div>
           </div>
         </div>
 
