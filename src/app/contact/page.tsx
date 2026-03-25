@@ -1,17 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import {
   Mail,
   ArrowRight,
   MessageSquare,
   Send,
+  CheckCircle,
+  Loader2,
 } from "lucide-react";
 import { LinkedinIcon, YoutubeIcon, InstagramIcon } from "@/components/icons";
 import { PageAnimations } from "@/components/page-animations";
-
-export const metadata = {
-  title: "Contact - Nader Alnajjar",
-  description:
-    "Get in touch with Nader Alnajjar. Work with LeverBrands, book a call, or just say hello.",
-};
 
 const socials = [
   {
@@ -23,7 +22,7 @@ const socials = [
   },
   {
     name: "Instagram",
-    handle: "@nader_al_najjer",
+    handle: "@nadernajjar",
     description: "Behind the scenes",
     url: "https://www.instagram.com/nadernajjar/",
     icon: InstagramIcon,
@@ -37,14 +36,46 @@ const socials = [
   },
   {
     name: "Email",
-    handle: "nader@leverbrands.com",
+    handle: "nader@leverbrands.co.uk",
     description: "For business enquiries",
-    url: "mailto:nader@leverbrands.com",
+    url: "mailto:nader@leverbrands.co.uk",
     icon: Mail,
   },
 ];
 
 export default function ContactPage() {
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+
+    const form = e.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      subject: (form.elements.namedItem("subject") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setStatus("sent");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <div>
       <PageAnimations />
@@ -58,7 +89,7 @@ export default function ContactPage() {
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mt-4 mb-6">
             Let&apos;s Build Some
             <br />
-            <span className="italic text-accent">leverage</span>.
+            <span className="italic text-accent">Leverage</span>.
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
             Whether you want to work together, collaborate on something, or just
@@ -77,48 +108,76 @@ export default function ContactPage() {
               Fill in the details below and it will go straight to my inbox.
             </p>
 
-            <form
-              action="mailto:nader@leverbrands.co.uk"
-              method="POST"
-              encType="text/plain"
-              className="space-y-4"
-            >
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-1.5">Name</label>
-                  <input type="text" id="name" name="Name" required className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors" placeholder="Your name" />
+            {status === "sent" ? (
+              <div className="bg-accent-subtle rounded-2xl border border-accent/20 p-10 text-center">
+                <CheckCircle size={32} className="text-accent mx-auto mb-4" />
+                <h3 className="font-display text-2xl mb-2">Message Sent</h3>
+                <p className="text-text-secondary text-sm">
+                  Thanks for reaching out. I&apos;ll get back to you within 48 hours.
+                </p>
+                <button
+                  onClick={() => setStatus("idle")}
+                  className="mt-6 text-sm text-accent hover:underline cursor-pointer"
+                >
+                  Send another message
+                </button>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-1.5">Name</label>
+                    <input type="text" id="name" name="name" required autoComplete="name" className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors" placeholder="Your name" />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-1.5">Email</label>
+                    <input type="email" id="email" name="email" required autoComplete="email" className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors" placeholder="you@company.com" />
+                  </div>
                 </div>
+
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-1.5">Email</label>
-                  <input type="email" id="email" name="Email" required className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors" placeholder="you@company.com" />
+                  <label htmlFor="subject" className="block text-sm font-medium text-text-primary mb-1.5">Subject</label>
+                  <select id="subject" name="subject" className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors cursor-pointer">
+                    <option value="Working with LeverBrands">Working with LeverBrands</option>
+                    <option value="Speaking / Podcast">Speaking / Podcast</option>
+                    <option value="Collaboration">Collaboration</option>
+                    <option value="Something Else">Something Else</option>
+                  </select>
                 </div>
-              </div>
 
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-text-primary mb-1.5">Subject</label>
-                <select id="subject" name="Subject" className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors cursor-pointer">
-                  <option value="Working with LeverBrands">Working with LeverBrands</option>
-                  <option value="Speaking / Podcast">Speaking / Podcast</option>
-                  <option value="Collaboration">Collaboration</option>
-                  <option value="Something Else">Something Else</option>
-                </select>
-              </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-1.5">Message</label>
+                  <textarea id="message" name="message" required rows={5} className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors resize-y" placeholder="Tell me about your goals..." />
+                </div>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-1.5">Message</label>
-                <textarea id="message" name="Message" required rows={5} className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors resize-y" placeholder="Tell me about your goals..." />
-              </div>
+                {status === "error" && (
+                  <p className="text-red-400 text-sm">Something went wrong. Please try again or email directly.</p>
+                )}
 
-              <button type="submit" className="w-full inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-colors cursor-pointer">
-                <Send size={16} />
-                Send Message
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  disabled={status === "sending"}
+                  className="w-full inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {status === "sending" ? (
+                    <>
+                      <Loader2 size={16} className="animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={16} />
+                      Send Message
+                    </>
+                  )}
+                </button>
+              </form>
+            )}
           </div>
 
           {/* Right: Social */}
           <div>
-            <h2 className="font-display text-2xl mb-2">Or find me here</h2>
+            <h2 className="font-display text-2xl mb-2">Or Find Me Here</h2>
             <p className="text-text-secondary text-sm mb-8">
               DMs are always open. Pick your platform.
             </p>
@@ -164,10 +223,10 @@ export default function ContactPage() {
                 />
                 <div>
                   <h3 className="font-medium text-sm text-text-primary mb-1">
-                    Quick note
+                    Quick Note
                   </h3>
                   <p className="text-sm text-text-secondary leading-relaxed">
-                    If you're a founder looking to build your personal brand, the
+                    If you&apos;re a founder looking to build your personal brand, the
                     fastest path is a LinkedIn DM. Tell me your current situation
                     and what you want to achieve. I read every message.
                   </p>
