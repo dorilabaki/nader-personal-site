@@ -90,12 +90,6 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left - content */}
             <div data-hero-content>
-              {/* Tag */}
-              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-border bg-bg-elevated/60 text-[13px] text-text-secondary mb-8 animate-fade-up" style={{ animationDelay: "0ms" }}>
-                <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                Founder of LeverBrands
-              </div>
-
               {/* Headline */}
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6 animate-fade-up" style={{ animationDelay: "100ms" }}>
                 Most Founders
