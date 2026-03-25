@@ -26,12 +26,12 @@ const resources = [
     featured: true,
   },
   {
-    title: "Hook Writing Cheat Sheet",
+    title: "Hook Generator",
     description:
-      "80% of your post's success depends on the first line. 20+ proven hook templates that earn that click.",
-    type: "Cheat Sheet",
-    icon: FileText,
-    url: "#",
+      "Generate scroll-stopping hooks for your LinkedIn posts instantly. Powered by proven frameworks that get clicks.",
+    type: "Tool",
+    icon: Sparkles,
+    url: "https://resources.leverbrands.co.uk/hook-generator",
     featured: false,
   },
   {

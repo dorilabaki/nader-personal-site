@@ -7,7 +7,6 @@ import {
   Eye,
   TrendingUp,
   Mail,
-  Zap,
   Target,
   DollarSign,
   ArrowUpRight,
@@ -72,13 +71,13 @@ export default function Home() {
     <div>
       {/* ═══════════════════ HERO ═══════════════════ */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        {/* Right half image */}
+        {/* Right half image - Nader headshot */}
         <div className="absolute inset-y-0 right-0 w-full md:w-[55%]">
           <Image
-            src="/hero-placeholder.svg"
-            alt="Nader Alnajjar"
+            src="/nader-headshot.jpg"
+            alt="Nader Alnajjar - Founder of LeverBrands"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           {/* Cloud/fade overlay from left */}
@@ -109,7 +108,7 @@ export default function Home() {
 
             {/* Subhead */}
             <p className="text-text-secondary text-lg leading-relaxed max-w-md mb-10 animate-fade-up" style={{ animationDelay: "200ms" }}>
-              I help ambitious founders build leverage through personal brand.
+              I help ambitious founders build leverage through personal brand and AI.
               Turning expertise into authority, and attention into revenue.
             </p>
 
@@ -209,45 +208,18 @@ export default function Home() {
               revenue. And we're just getting started.
             </p>
 
-            {/* Info card */}
-            <div className="mt-8 bg-bg-card rounded-2xl border border-border p-8 space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center text-white text-lg font-bold">
-                  N
-                </div>
-                <div>
-                  <div className="font-semibold text-text-primary text-base">
-                    Nader Alnajjar
-                  </div>
-                  <div className="text-[13px] text-text-muted">
-                    Pronounced like Ladder, but with an N
-                  </div>
-                </div>
-              </div>
-              <div className="hr-accent" />
-              <div className="grid grid-cols-2 gap-4 text-[13px]">
-                <div>
-                  <span className="text-text-muted block mb-1">Role</span>
-                  <span className="text-text-primary">
-                    Founder, LeverBrands
-                  </span>
-                </div>
-                <div>
-                  <span className="text-text-muted block mb-1">Based</span>
-                  <span className="text-text-primary">London, UK</span>
-                </div>
-                <div>
-                  <span className="text-text-muted block mb-1">Newsletter</span>
-                  <span className="text-text-primary">
-                    Building Leverage
-                  </span>
-                </div>
-                <div>
-                  <span className="text-text-muted block mb-1">
-                    Newsletter
-                  </span>
-                  <span className="text-text-primary">Building Leverage</span>
-                </div>
+            {/* Nader & Chris */}
+            <div className="mt-8 relative rounded-2xl overflow-hidden border border-border">
+              <Image
+                src="/nader-and-chris.jpg"
+                alt="Nader Alnajjar and Chris Donnelly - Co-founders of LeverBrands"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                <p className="text-white text-sm font-medium">Nader Alnajjar & Chris Donnelly</p>
+                <p className="text-white/60 text-xs">Co-founders, LeverBrands</p>
               </div>
             </div>
           </div>
@@ -355,8 +327,7 @@ export default function Home() {
           <h2 className="font-display text-4xl md:text-5xl mt-4 leading-[1.1] mb-6">
             The newsletter for founders
             <br />
-            who want <span className="italic text-accent">systems</span>, not
-            fluff.
+            who want <span className="italic text-accent">systems</span>.
           </h2>
           <p className="text-text-secondary mb-10 max-w-md mx-auto">
             Every Sunday. The exact tools, processes, and breakdowns we use at

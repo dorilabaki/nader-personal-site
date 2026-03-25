@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Quote } from "lucide-react";
 
 export const metadata = {
@@ -85,6 +86,17 @@ export default function StoryPage() {
                 bigger.
               </p>
             </div>
+          </div>
+
+          {/* Behind the scenes */}
+          <div className="rounded-2xl overflow-hidden border border-border">
+            <Image
+              src="/nader-office.jpg"
+              alt="Nader Alnajjar working at LeverBrands office"
+              width={800}
+              height={600}
+              className="w-full h-auto object-cover"
+            />
           </div>
 
           {/* Quote */}
@@ -181,6 +193,21 @@ export default function StoryPage() {
             </div>
           </div>
 
+          {/* Rory Sutherland */}
+          <div className="relative rounded-2xl overflow-hidden border border-border">
+            <Image
+              src="/nader-and-rory.png"
+              alt="Nader Alnajjar with Rory Sutherland, Vice Chairman of Ogilvy"
+              width={800}
+              height={800}
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+              <p className="text-white text-sm font-medium">With Rory Sutherland</p>
+              <p className="text-white/60 text-xs">Vice Chairman of Ogilvy</p>
+            </div>
+          </div>
+
           {/* Chapter 5 */}
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -202,6 +229,17 @@ export default function StoryPage() {
               </p>
               <p>The window is wide open. And I'm just getting started.</p>
             </div>
+          </div>
+
+          {/* Dream photo */}
+          <div className="rounded-2xl overflow-hidden border border-border">
+            <Image
+              src="/nader-dream.png"
+              alt="Nader Alnajjar building the dream"
+              width={800}
+              height={1000}
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
 

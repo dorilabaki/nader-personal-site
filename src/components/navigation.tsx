@@ -24,19 +24,13 @@ export function Navigation() {
     <header className="sticky top-0 z-50 bg-bg/60 backdrop-blur-2xl border-b border-border">
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9 rounded-lg bg-accent flex items-center justify-center text-white font-bold text-sm overflow-hidden transition-transform group-hover:scale-105">
-            N
-            <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-semibold text-sm text-text-primary tracking-tight leading-none">
-              Nader
-            </span>
-            <span className="text-[10px] text-text-muted tracking-widest uppercase leading-none mt-0.5">
-              Alnajjar
-            </span>
-          </div>
+        <Link href="/" className="flex items-center gap-2 group">
+          <span className="font-semibold text-sm text-text-primary tracking-tight">
+            Nader
+          </span>
+          <span className="text-[10px] text-text-muted tracking-widest uppercase">
+            Alnajjar
+          </span>
         </Link>
 
         {/* Desktop nav */}
