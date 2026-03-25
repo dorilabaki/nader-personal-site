@@ -117,7 +117,7 @@ html {
 }
 .glow-border:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px rgba(224, 120, 48, 0.03);
+  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px rgba(39, 189, 91, 0.03);
 }
 
 /* Horizontal rule */
