@@ -79,13 +79,11 @@ export default function Home() {
             src="/nader-headshot.png"
             alt=""
             fill
-            className="object-cover object-[80%_20%] opacity-50"
+            className="object-contain object-[center_top] opacity-40"
             aria-hidden="true"
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-bg from-30% to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-bg to-transparent" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-28">
