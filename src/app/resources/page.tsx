@@ -24,6 +24,7 @@ const resources = [
     type: "Free Guide",
     icon: Sparkles,
     url: "https://resources.leverbrands.com/linkedin-starter-pack",
+    cta: "Get It Free",
     featured: true,
   },
   {
@@ -33,6 +34,7 @@ const resources = [
     type: "Tool",
     icon: Sparkles,
     url: "https://resources.leverbrands.com/hook-generator",
+    cta: "Try It Free",
     featured: false,
   },
   {
@@ -42,6 +44,7 @@ const resources = [
     type: "Application",
     icon: Lightbulb,
     url: "https://resources.leverbrands.com/work-with-us",
+    cta: "Apply Now",
     featured: false,
   },
   {
@@ -51,6 +54,7 @@ const resources = [
     type: "Newsletter",
     icon: BookOpen,
     url: "https://resources.leverbrands.com/newsletter",
+    cta: "Subscribe Free",
     featured: false,
   },
 ];
@@ -143,8 +147,8 @@ export default function ResourcesPage() {
                   {resource.description}
                 </p>
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-accent">
-                  {resource.url === "#" ? "Coming Soon" : "Get It Free"}
-                  {resource.url !== "#" && <Download size={12} />}
+                  {resource.cta}
+                  <ArrowUpRight size={12} />
                 </span>
               </a>
             ))}
