@@ -143,7 +143,7 @@ export default function AboutPage() {
                 <div>
                   <dt className="text-text-muted mb-0.5">Focus</dt>
                   <dd className="text-text-primary font-medium">
-                    Personal branding, LinkedIn growth, founder-led content
+                    Building Leverage Through Personal Branding and AI
                   </dd>
                 </div>
                 <div>
