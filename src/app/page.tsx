@@ -74,7 +74,7 @@ export default function Home() {
 
       {/* ═══════════════════ HERO ═══════════════════ */}
       <section data-hero className="relative overflow-hidden border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-16 md:pb-24">
+        <div className="max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-28">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left - content */}
             <div data-hero-content>
@@ -136,14 +136,15 @@ export default function Home() {
               </div>
             </div>
             {/* Desktop */}
-            <div data-hero-image className="relative hidden md:block -mt-16 -mb-24">
-              <div className="relative h-[110%] min-h-[550px]">
-                <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[80px] scale-90" />
+            <div data-hero-image className="relative hidden md:block">
+              <div className="relative min-h-[600px] -my-8">
+                <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[100px] scale-75 translate-y-12" />
                 <Image
                   src="/nader-headshot.png"
                   alt="Nader Alnajjar - Founder of LeverBrands"
                   fill
-                  className="object-contain object-top drop-shadow-2xl scale-110"
+                  className="object-contain object-center drop-shadow-2xl"
+                  sizes="50vw"
                   priority
                 />
               </div>
