@@ -340,36 +340,36 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-3xl mb-4">
+            <h2 className="font-display text-3xl mb-6">
               Expertise and Focus Areas
-
             </h2>
-            <div className="text-text-secondary leading-[1.8]">
-              <p className="mb-4">
-                Nader Alnajjar is known for expertise in the following areas:
-              </p>
-              <div className="grid sm:grid-cols-2 gap-3 text-sm">
-                {[
-                  "Personal branding for founders",
-                  "LinkedIn content strategy",
-                  "Founder-led growth",
-                  "Content-to-revenue systems",
-                  "Newsletter growth and monetisation",
-                  "Lead magnet and funnel design",
-                  "AI tools for content creation",
-                  "Social media management",
-                  "Hook writing and copywriting",
-                  "Scaling a personal brand agency",
-                ].map((skill) => (
-                  <div
-                    key={skill}
-                    className="flex items-center gap-2 text-text-primary"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                    {skill}
-                  </div>
-                ))}
-              </div>
+            <div className="grid sm:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
+              {[
+                {
+                  title: "Personal Branding",
+                  description: "Positioning founders as known authorities through LinkedIn content, storytelling, and consistent visibility across platforms.",
+                },
+                {
+                  title: "Content-to-Revenue Systems",
+                  description: "Building the full infrastructure - content, newsletters, funnels, and email sequences - that turns attention into inbound revenue.",
+                },
+                {
+                  title: "Founder-Led Growth",
+                  description: "Helping founders use personal brand as their primary growth channel. 500M+ impressions and $10M+ client revenue driven.",
+                },
+                {
+                  title: "AI Tools for Content",
+                  description: "Leveraging AI to scale content production, improve hook writing, and build systems that reduce manual effort.",
+                },
+              ].map((area) => (
+                <div
+                  key={area.title}
+                  className="bg-bg-card p-8"
+                >
+                  <h3 className="font-semibold text-text-primary mb-2">{area.title}</h3>
+                  <p className="text-sm text-text-secondary leading-relaxed">{area.description}</p>
+                </div>
+              ))}
             </div>
           </div>
 
