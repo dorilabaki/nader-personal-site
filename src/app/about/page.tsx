@@ -249,19 +249,19 @@ export default function AboutPage() {
               </p>
               <div className="bg-bg-elevated rounded-xl border border-border p-6 space-y-4 text-sm">
                 <div>
-                  <strong className="text-accent">Layer 1: Attention.</strong>{" "}
+                  <strong className="text-text-primary">Layer 1: Attention.</strong>{" "}
                   Getting founders in front of the right people through LinkedIn
                   content, distribution, short-form video, and targeted
                   outreach.
                 </div>
                 <div>
-                  <strong className="text-gold">Layer 2: Nurture.</strong>{" "}
+                  <strong className="text-text-primary">Layer 2: Nurture.</strong>{" "}
                   Building newsletters, funnels, and email sequences that
                   de-platform the audience and nurture them until they are ready
                   to buy.
                 </div>
                 <div>
-                  <strong className="text-emerald-400">
+                  <strong className="text-text-primary">
                     Layer 3: Monetisation.
                   </strong>{" "}
                   Turning attention into actual revenue through inbound leads,

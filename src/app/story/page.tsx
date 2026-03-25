@@ -160,7 +160,7 @@ export default function StoryPage() {
               <p>We think in three layers:</p>
               <div className="bg-bg-elevated rounded-xl border border-border p-6 space-y-5">
                 <div>
-                  <span className="font-semibold text-accent">
+                  <span className="font-semibold text-text-primary">
                     Layer 1: Attention.
                   </span>{" "}
                   <span className="text-text-secondary">
@@ -169,7 +169,7 @@ export default function StoryPage() {
                   </span>
                 </div>
                 <div>
-                  <span className="font-semibold text-gold">
+                  <span className="font-semibold text-text-primary">
                     Layer 2: Nurture.
                   </span>{" "}
                   <span className="text-text-secondary">
@@ -179,7 +179,7 @@ export default function StoryPage() {
                   </span>
                 </div>
                 <div>
-                  <span className="font-semibold text-emerald-400">
+                  <span className="font-semibold text-text-primary">
                     Layer 3: Monetisation.
                   </span>{" "}
                   <span className="text-text-secondary">
