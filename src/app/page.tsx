@@ -121,14 +121,14 @@ export default function Home() {
             </div>
 
             {/* Right - headshot (transparent BG, blends with page) */}
-            <div data-hero-image className="relative hidden md:block">
-              <div className="relative aspect-[4/5]">
-                <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[80px] scale-75 translate-y-8" />
+            <div data-hero-image className="relative hidden md:block -mt-16 -mb-24">
+              <div className="relative h-[110%] min-h-[550px]">
+                <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[80px] scale-90" />
                 <Image
                   src="/nader-headshot.png"
                   alt="Nader Alnajjar - Founder of LeverBrands"
                   fill
-                  className="object-contain object-center drop-shadow-2xl"
+                  className="object-contain object-top drop-shadow-2xl scale-110"
                   priority
                 />
               </div>
