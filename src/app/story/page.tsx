@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Quote } from "lucide-react";
+import { PageAnimations } from "@/components/page-animations";
 
 export const metadata = {
   title: "My Story - Nader Alnajjar",
@@ -11,10 +12,12 @@ export const metadata = {
 export default function StoryPage() {
   return (
     <div>
+      <PageAnimations />
+
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute top-0 left-0 w-96 h-96 bg-accent/[0.04] rounded-full blur-[120px]" />
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+        <div data-page-hero className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
             The Story
           </span>
@@ -35,12 +38,12 @@ export default function StoryPage() {
         <div className="space-y-16">
           {/* Chapter 1 */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
+            <div data-chapter className="flex items-center gap-3 mb-6">
               <span className="text-xs font-mono text-accent">01</span>
               <div className="flex-1 h-px bg-border" />
             </div>
-            <h2 className="font-display text-3xl mb-6">Before LeverBrands</h2>
-            <div className="space-y-5 text-text-secondary leading-[1.8]">
+            <h2 data-chapter className="font-display text-3xl mb-6">Before LeverBrands</h2>
+            <div data-prose className="space-y-5 text-text-secondary leading-[1.8]">
               <p>I'm Nader. Pronounced like Ladder, but with an N.</p>
               <p>
                 I spent 5 years working in finance at M&G plc, building tools
@@ -57,12 +60,12 @@ export default function StoryPage() {
 
           {/* Chapter 2 */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
+            <div data-chapter className="flex items-center gap-3 mb-6">
               <span className="text-xs font-mono text-accent">02</span>
               <div className="flex-1 h-px bg-border" />
             </div>
-            <h2 className="font-display text-3xl mb-6">The Lockdown</h2>
-            <div className="space-y-5 text-text-secondary leading-[1.8]">
+            <h2 data-chapter className="font-display text-3xl mb-6">The Lockdown</h2>
+            <div data-prose className="space-y-5 text-text-secondary leading-[1.8]">
               <p>
                 In 2020, COVID hit. I was locked down in East London with my
                 flatmate, Chris Donnelly. Chris was running VERB Brands, a
@@ -89,7 +92,7 @@ export default function StoryPage() {
           </div>
 
           {/* Behind the scenes - team collaboration */}
-          <div className="rounded-2xl overflow-hidden border border-border">
+          <div data-image-reveal className="rounded-2xl overflow-hidden border border-border">
             <Image
               src="/nader-office-bottom.jpg"
               alt="Nader Alnajjar and team collaborating at LeverBrands"
@@ -100,7 +103,7 @@ export default function StoryPage() {
           </div>
 
           {/* Quote */}
-          <div className="bg-bg-card rounded-2xl border border-border p-10 my-4">
+          <div data-card-reveal className="bg-bg-card rounded-2xl border border-border p-10 my-4">
             <Quote size={20} className="text-accent mb-6" />
             <blockquote className="font-display text-2xl md:text-3xl leading-[1.3] text-text-primary">
               Your personal brand isn't vanity. It's your voice.
@@ -112,31 +115,31 @@ export default function StoryPage() {
 
           {/* Chapter 3 */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
+            <div data-chapter className="flex items-center gap-3 mb-6">
               <span className="text-xs font-mono text-accent">03</span>
               <div className="flex-1 h-px bg-border" />
             </div>
-            <h2 className="font-display text-3xl mb-6">
+            <h2 data-chapter className="font-display text-3xl mb-6">
               The Birth of LeverBrands
             </h2>
-            <div className="space-y-5 text-text-secondary leading-[1.8]">
+            <div data-prose className="space-y-5 text-text-secondary leading-[1.8]">
               <p>
                 The strategies we developed for Chris worked. Really well. His
                 brand grew to 3M+ followers. He built a business generating
                 $10M/year. An AI SaaS product that hit $60K MRR in 14 days.
               </p>
               <p>
-                Other founders started asking: "How did you do that? Can you
-                help me?"
+                Other founders started asking: &quot;How did you do that? Can you
+                help me?&quot;
               </p>
               <p>
                 In August 2024, I founded LeverBrands. The idea was simple. Most
                 founders are REALLY good at what they do. But the people who
-                should be buying from them have no idea they exist. They're
+                should be buying from them have no idea they exist. They&apos;re
                 invisible.
               </p>
               <p>
-                We don't just post content and call it a day. We build the full
+                We don&apos;t just post content and call it a day. We build the full
                 infrastructure underneath. A system that turns attention into
                 money in your pocket.
               </p>
@@ -145,16 +148,16 @@ export default function StoryPage() {
 
           {/* Chapter 4 */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
+            <div data-chapter className="flex items-center gap-3 mb-6">
               <span className="text-xs font-mono text-accent">04</span>
               <div className="flex-1 h-px bg-border" />
             </div>
-            <h2 className="font-display text-3xl mb-6">
+            <h2 data-chapter className="font-display text-3xl mb-6">
               The System That Scales
             </h2>
-            <div className="space-y-5 text-text-secondary leading-[1.8]">
+            <div data-prose className="space-y-5 text-text-secondary leading-[1.8]">
               <p>We think in three layers:</p>
-              <div className="bg-bg-elevated rounded-xl border border-border p-6 space-y-5">
+              <div data-card-reveal className="bg-bg-elevated rounded-xl border border-border p-6 space-y-5">
                 <div>
                   <span className="font-semibold text-accent">
                     Layer 1: Attention.
@@ -169,7 +172,7 @@ export default function StoryPage() {
                     Layer 2: Nurture.
                   </span>{" "}
                   <span className="text-text-secondary">
-                    Without a system, you're entertaining strangers. We build
+                    Without a system, you&apos;re entertaining strangers. We build
                     newsletters, funnels, and email sequences that de-platform
                     your audience.
                   </span>
@@ -187,37 +190,37 @@ export default function StoryPage() {
               </div>
               <p>
                 In less than two years, LeverBrands went from just me to 30+
-                employees. We've generated 500M+ impressions and driven $10M+ in
-                client revenue. And we're just getting started.
+                employees. We&apos;ve generated 500M+ impressions and driven $10M+ in
+                client revenue. And we&apos;re just getting started.
               </p>
             </div>
           </div>
 
           {/* Chapter 5 */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
+            <div data-chapter className="flex items-center gap-3 mb-6">
               <span className="text-xs font-mono text-accent">05</span>
               <div className="flex-1 h-px bg-border" />
             </div>
-            <h2 className="font-display text-3xl mb-6">What's Next</h2>
-            <div className="space-y-5 text-text-secondary leading-[1.8]">
+            <h2 data-chapter className="font-display text-3xl mb-6">What&apos;s Next</h2>
+            <div data-prose className="space-y-5 text-text-secondary leading-[1.8]">
               <p>
-                The playbook works. But we're not done. The founders who invest
+                The playbook works. But we&apos;re not done. The founders who invest
                 in personal brand now are building leverage that compounds for
                 years. The ones who wait will spend 10x more trying to catch up.
               </p>
               <p>
-                I'm focused on scaling LeverBrands, building the Building
+                I&apos;m focused on scaling LeverBrands, building the Building
                 Leverage newsletter into the go-to resource for founder-led
                 growth, and helping more ambitious people turn their expertise
                 into authority.
               </p>
-              <p>The window is wide open. And I'm just getting started.</p>
+              <p>The window is wide open. And I&apos;m just getting started.</p>
             </div>
           </div>
 
           {/* Rory Sutherland */}
-          <div className="relative rounded-2xl overflow-hidden border border-border">
+          <div data-image-reveal className="relative rounded-2xl overflow-hidden border border-border">
             <Image
               src="/nader-and-rory.png"
               alt="Nader Alnajjar with Rory Sutherland, Vice Chairman of Ogilvy"
@@ -233,12 +236,12 @@ export default function StoryPage() {
         </div>
 
         {/* CTA */}
-        <div className="mt-24 pt-12 border-t border-border text-center">
+        <div data-reveal className="mt-24 pt-12 border-t border-border text-center">
           <h3 className="font-display text-3xl mb-4">
             Want to build some leverage?
           </h3>
           <p className="text-text-secondary mb-8 max-w-md mx-auto text-sm">
-            Whether you want to work together or just stay in the loop, there's
+            Whether you want to work together or just stay in the loop, there&apos;s
             a place for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

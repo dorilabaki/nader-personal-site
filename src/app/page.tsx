@@ -11,6 +11,7 @@ import {
   DollarSign,
   ArrowUpRight,
 } from "lucide-react";
+import { ScrollAnimations } from "@/components/scroll-animations";
 
 const stats = [
   { value: "500M+", label: "Impressions", icon: Eye },
@@ -69,10 +70,12 @@ const layers = [
 export default function Home() {
   return (
     <div>
+      <ScrollAnimations />
+
       {/* ═══════════════════ HERO ═══════════════════ */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section data-hero className="relative min-h-[90vh] flex items-center overflow-hidden">
         {/* Right half image - Nader headshot */}
-        <div className="absolute inset-y-0 right-0 w-full md:w-[55%]">
+        <div data-hero-image className="absolute inset-y-0 right-0 w-full md:w-[55%]">
           <Image
             src="/nader-headshot.jpg"
             alt="Nader Alnajjar - Founder of LeverBrands"
@@ -89,7 +92,7 @@ export default function Home() {
         </div>
 
         {/* Content - left side */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full py-24 md:py-0">
+        <div data-hero-content className="relative z-10 max-w-7xl mx-auto px-6 w-full py-24 md:py-0">
           <div className="max-w-xl">
             {/* Tag */}
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-border bg-bg-elevated/60 backdrop-blur-sm text-[13px] text-text-secondary mb-10 animate-fade-up" style={{ animationDelay: "0ms" }}>
@@ -133,7 +136,7 @@ export default function Home() {
         </div>
 
         {/* Bottom accent line */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-accent/40 via-accent/10 to-transparent" />
+        <div data-line-grow className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-accent/40 via-accent/10 to-transparent" />
       </section>
 
       {/* ═══════════════════ STATS ═══════════════════ */}
@@ -141,7 +144,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {stats.map((stat) => (
-              <div key={stat.label} className="group">
+              <div key={stat.label} data-stat-value className="group">
                 <div className="flex items-center gap-3 mb-3">
                   <stat.icon
                     size={16}
@@ -165,7 +168,7 @@ export default function Home() {
         <div className="grid md:grid-cols-12 gap-16 items-start">
           {/* Left label */}
           <div className="md:col-span-4">
-            <div className="sticky top-24">
+            <div className="sticky top-24" data-reveal-left>
               <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
                 The Story
               </span>
@@ -191,25 +194,25 @@ export default function Home() {
 
           {/* Right content */}
           <div className="md:col-span-8 space-y-6 text-text-secondary leading-[1.8] text-[15px]">
-            <p>
+            <p data-reveal>
               Over the last 6 years, I noticed a big problem with how founders
               build their businesses: most of them are completely invisible.
               They're good at what they do. REALLY good. But the people who
               should be buying from them have no idea they exist.
             </p>
-            <p>
+            <p data-reveal>
               During COVID lockdown, my flatmate Chris Donnelly and I started
               building his LinkedIn from scratch. The strategies we developed
               grew into something much bigger.
             </p>
-            <p>
+            <p data-reveal>
               That side project became LeverBrands. We went from 1 person to 30+
               employees in under two years. 500M+ impressions. $10M+ in client
               revenue. And we're just getting started.
             </p>
 
             {/* Nader & Chris */}
-            <div className="mt-8 relative rounded-2xl overflow-hidden border border-border aspect-[16/10]">
+            <div data-image-reveal className="mt-8 relative rounded-2xl overflow-hidden border border-border aspect-[16/10]">
               <Image
                 src="/nader-and-chris.jpg"
                 alt="Nader Alnajjar and Chris Donnelly - Co-founders of LeverBrands"
@@ -231,7 +234,7 @@ export default function Home() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-accent/[0.03] blur-[120px]" />
 
         <div className="relative max-w-7xl mx-auto px-6 py-28 md:py-36">
-          <div className="max-w-xl mb-20">
+          <div className="max-w-xl mb-20" data-reveal-left>
             <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
               The System
             </span>
@@ -247,7 +250,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+          <div data-stagger-cards className="grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
             {layers.map((layer) => (
               <div
                 key={layer.number}
@@ -279,7 +282,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-6 py-28 md:py-36">
         <div className="grid md:grid-cols-12 gap-16">
           {/* Left */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-4" data-reveal-left>
             <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
               Results
             </span>
@@ -292,7 +295,7 @@ export default function Home() {
 
           {/* Right - results grid */}
           <div className="md:col-span-8">
-            <div className="grid sm:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
+            <div data-stagger-cards className="grid sm:grid-cols-2 gap-px bg-border rounded-2xl overflow-hidden">
               {results.map((item) => (
                 <div
                   key={item.name}
@@ -319,7 +322,7 @@ export default function Home() {
         {/* Glow */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full bg-accent/[0.04] blur-[100px]" />
 
-        <div className="relative max-w-3xl mx-auto px-6 py-28 md:py-36 text-center">
+        <div data-newsletter className="relative max-w-3xl mx-auto px-6 py-28 md:py-36 text-center">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
             Building Leverage
           </span>
