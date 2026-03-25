@@ -18,36 +18,20 @@ export function PageAnimations() {
       const heroElements = document.querySelectorAll("[data-page-hero] > *");
       if (heroElements.length) {
         gsap.from(heroElements, {
-          y: 40,
-          opacity: 0,
-          duration: 0.9,
+          y: 30,
+          autoAlpha: 0,
+          duration: 0.8,
           ease: "power3.out",
-          stagger: 0.12,
+          stagger: 0.1,
         });
       }
 
-      // ── Chapter headers: slide from left with line ──
+      // ── Chapter headers ──
       document.querySelectorAll("[data-chapter]").forEach((el) => {
         gsap.from(el, {
-          x: -40,
-          opacity: 0,
-          duration: 0.8,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none none",
-          },
-        });
-      });
-
-      // ── Paragraphs: fade up on scroll ──
-      document.querySelectorAll("[data-prose] > p, [data-prose] > div").forEach((el, i) => {
-        gsap.from(el, {
-          y: 30,
-          opacity: 0,
+          x: -30,
+          autoAlpha: 0,
           duration: 0.7,
-          delay: i * 0.05,
           ease: "power3.out",
           scrollTrigger: {
             trigger: el,
@@ -57,32 +41,47 @@ export function PageAnimations() {
         });
       });
 
-      // ── Images: scale reveal ──
-      document.querySelectorAll("[data-image-reveal]").forEach((el) => {
+      // ── Paragraphs ──
+      document.querySelectorAll("[data-prose] > p, [data-prose] > div").forEach((el) => {
         gsap.from(el, {
-          scale: 1.1,
-          opacity: 0,
-          duration: 1.2,
-          ease: "power2.out",
+          y: 20,
+          autoAlpha: 0,
+          duration: 0.6,
+          ease: "power3.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 85%",
+            start: "top 90%",
             toggleActions: "play none none none",
           },
         });
       });
 
-      // ── Blockquotes and cards: pop in ──
+      // ── Images ──
+      document.querySelectorAll("[data-image-reveal]").forEach((el) => {
+        gsap.from(el, {
+          scale: 1.05,
+          autoAlpha: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 88%",
+            toggleActions: "play none none none",
+          },
+        });
+      });
+
+      // ── Cards ──
       document.querySelectorAll("[data-card-reveal]").forEach((el) => {
         gsap.from(el, {
-          y: 40,
-          opacity: 0,
-          scale: 0.97,
-          duration: 0.9,
+          y: 30,
+          autoAlpha: 0,
+          scale: 0.98,
+          duration: 0.8,
           ease: "power3.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 85%",
+            start: "top 88%",
             toggleActions: "play none none none",
           },
         });
@@ -92,31 +91,31 @@ export function PageAnimations() {
       document.querySelectorAll("[data-stagger-cards]").forEach((container) => {
         const cards = container.children;
         gsap.from(cards, {
-          y: 40,
-          opacity: 0,
-          duration: 0.7,
+          y: 30,
+          autoAlpha: 0,
+          duration: 0.6,
           ease: "power3.out",
-          stagger: 0.12,
+          stagger: 0.1,
           scrollTrigger: {
             trigger: container,
-            start: "top 82%",
+            start: "top 85%",
             toggleActions: "play none none none",
           },
         });
       });
 
-      // ── Detail/FAQ items: stagger ──
+      // ── Stagger lists ──
       document.querySelectorAll("[data-stagger-list]").forEach((container) => {
         const items = container.children;
         gsap.from(items, {
-          y: 20,
-          opacity: 0,
+          y: 15,
+          autoAlpha: 0,
           duration: 0.5,
           ease: "power3.out",
-          stagger: 0.08,
+          stagger: 0.07,
           scrollTrigger: {
             trigger: container,
-            start: "top 85%",
+            start: "top 88%",
             toggleActions: "play none none none",
           },
         });
@@ -125,13 +124,13 @@ export function PageAnimations() {
       // ── General reveal ──
       document.querySelectorAll("[data-reveal]").forEach((el) => {
         gsap.from(el, {
-          y: 50,
-          opacity: 0,
-          duration: 0.9,
+          y: 35,
+          autoAlpha: 0,
+          duration: 0.8,
           ease: "power3.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 85%",
+            start: "top 88%",
             toggleActions: "play none none none",
           },
         });

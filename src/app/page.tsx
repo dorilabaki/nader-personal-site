@@ -73,64 +73,63 @@ export default function Home() {
       <ScrollAnimations />
 
       {/* ═══════════════════ HERO ═══════════════════ */}
-      <section data-hero className="relative min-h-[90vh] flex items-center overflow-hidden">
-        {/* Right half image - Nader headshot */}
-        <div data-hero-image className="absolute inset-y-0 right-0 w-full md:w-[55%]">
-          <Image
-            src="/nader-headshot.jpg"
-            alt="Nader Alnajjar - Founder of LeverBrands"
-            fill
-            className="object-cover object-top"
-            priority
-          />
-          {/* Cloud/fade overlay from left */}
-          <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/95 via-30% to-bg/20 md:via-bg/80 md:via-20% md:to-transparent" />
-          {/* Bottom fade */}
-          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-bg to-transparent" />
-          {/* Grain */}
-          <div className="absolute inset-0 grain" />
-        </div>
+      <section data-hero className="relative overflow-hidden border-b border-border">
+        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            {/* Left - content */}
+            <div data-hero-content>
+              {/* Tag */}
+              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-border bg-bg-elevated/60 text-[13px] text-text-secondary mb-8 animate-fade-up" style={{ animationDelay: "0ms" }}>
+                <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                Founder of LeverBrands
+              </div>
 
-        {/* Content - left side */}
-        <div data-hero-content className="relative z-10 max-w-7xl mx-auto px-6 w-full py-24 md:py-0">
-          <div className="max-w-xl">
-            {/* Tag */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-border bg-bg-elevated/60 backdrop-blur-sm text-[13px] text-text-secondary mb-10 animate-fade-up" style={{ animationDelay: "0ms" }}>
-              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-              Founder of LeverBrands
+              {/* Headline */}
+              <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6 animate-fade-up" style={{ animationDelay: "100ms" }}>
+                Most Founders
+                <br />
+                Are <span className="italic text-accent">Invisible</span>.
+                <br />
+                <span className="text-text-secondary">I Fix That.</span>
+              </h1>
+
+              {/* Subhead */}
+              <p className="text-text-secondary text-lg leading-relaxed max-w-md mb-8 animate-fade-up" style={{ animationDelay: "200ms" }}>
+                I help ambitious founders build leverage through personal brand and AI.
+                Turning expertise into authority, and attention into revenue.
+              </p>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "300ms" }}>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                >
+                  Work With Me
+                  <ArrowRight size={16} />
+                </Link>
+                <Link
+                  href="/newsletter"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-border text-text-primary rounded-xl font-medium text-sm hover:border-border-hover hover:bg-bg-elevated transition-all cursor-pointer"
+                >
+                  <Mail size={16} className="text-text-muted" />
+                  Subscribe to Building Leverage
+                </Link>
+              </div>
             </div>
 
-            {/* Headline */}
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-6 animate-fade-up" style={{ animationDelay: "100ms" }}>
-              Most Founders
-              <br />
-              are <span className="italic text-accent">invisible</span>.
-              <br />
-              <span className="text-text-secondary">I fix that.</span>
-            </h1>
-
-            {/* Subhead */}
-            <p className="text-text-secondary text-lg leading-relaxed max-w-md mb-10 animate-fade-up" style={{ animationDelay: "200ms" }}>
-              I help ambitious founders build leverage through personal brand and AI.
-              Turning expertise into authority, and attention into revenue.
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "300ms" }}>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
-              >
-                Work With Me
-                <ArrowRight size={16} />
-              </Link>
-              <Link
-                href="/newsletter"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-border text-text-primary rounded-xl font-medium text-sm hover:border-border-hover hover:bg-bg-elevated transition-all cursor-pointer"
-              >
-                <Mail size={16} className="text-text-muted" />
-                Subscribe to Building Leverage
-              </Link>
+            {/* Right - headshot */}
+            <div data-hero-image className="relative hidden md:block">
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border">
+                <Image
+                  src="/nader-headshot.jpg"
+                  alt="Nader Alnajjar - Founder of LeverBrands"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 grain" />
+              </div>
             </div>
           </div>
         </div>
@@ -164,11 +163,11 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ ABOUT ═══════════════════ */}
-      <section className="max-w-7xl mx-auto px-6 py-28 md:py-36">
-        <div className="grid md:grid-cols-12 gap-16 items-center">
+      <section className="max-w-7xl mx-auto px-6 py-20 md:py-28">
+        <div className="grid md:grid-cols-12 gap-16 items-start">
           {/* Left label */}
           <div className="md:col-span-4">
-            <div data-reveal-left>
+            <div className="md:sticky md:top-28" data-reveal-left>
               <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
                 The Story
               </span>
@@ -233,7 +232,7 @@ export default function Home() {
         {/* Background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-accent/[0.03] blur-[120px]" />
 
-        <div className="relative max-w-7xl mx-auto px-6 py-28 md:py-36">
+        <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
           <div className="max-w-xl mb-20" data-reveal-left>
             <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
               The System
@@ -279,7 +278,7 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════ RESULTS ═══════════════════ */}
-      <section className="max-w-7xl mx-auto px-6 py-28 md:py-36">
+      <section className="max-w-7xl mx-auto px-6 py-20 md:py-28">
         <div className="grid md:grid-cols-12 gap-16">
           {/* Left */}
           <div className="md:col-span-4" data-reveal-left>
@@ -322,7 +321,7 @@ export default function Home() {
         {/* Glow */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full bg-accent/[0.04] blur-[100px]" />
 
-        <div data-newsletter className="relative max-w-3xl mx-auto px-6 py-28 md:py-36 text-center">
+        <div data-newsletter className="relative max-w-3xl mx-auto px-6 py-20 md:py-28 text-center">
           <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
             Building Leverage
           </span>
