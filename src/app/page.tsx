@@ -74,7 +74,21 @@ export default function Home() {
 
       {/* ═══════════════════ HERO ═══════════════════ */}
       <section data-hero className="relative overflow-hidden border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-28">
+        {/* Mobile background headshot */}
+        <div className="absolute inset-0 md:hidden">
+          <Image
+            src="/nader-headshot.png"
+            alt=""
+            fill
+            className="object-contain object-right-bottom opacity-30"
+            aria-hidden="true"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/80 to-bg/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-transparent" />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-28">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left - content */}
             <div data-hero-content>
@@ -120,21 +134,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right - headshot (transparent BG, blends with page) */}
-            {/* Mobile */}
-            <div data-hero-image className="relative md:hidden -mx-6 -mb-16">
-              <div className="relative h-[400px]">
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] rounded-full bg-accent/[0.08] blur-[80px]" />
-                <Image
-                  src="/nader-headshot.png"
-                  alt="Nader Alnajjar - Founder of LeverBrands"
-                  fill
-                  className="object-contain object-bottom drop-shadow-2xl"
-                  priority
-                />
-                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-bg to-transparent" />
-              </div>
-            </div>
             {/* Desktop */}
             <div data-hero-image className="relative hidden md:block">
               <div className="relative min-h-[600px] -my-8">
