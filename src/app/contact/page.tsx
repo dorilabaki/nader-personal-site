@@ -70,31 +70,50 @@ export default function ContactPage() {
       {/* Contact Grid */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-16">
-          {/* Left: Work With Me */}
+          {/* Left: Contact Form */}
           <div>
-            <h2 className="font-display text-2xl mb-2">Work With Me</h2>
-            <p className="text-text-secondary text-sm mb-6">
-              Ready to build your personal brand? Fill out the form and I'll get back to you within 48 hours.
+            <h2 className="font-display text-2xl mb-2">Send a Message</h2>
+            <p className="text-text-secondary text-sm mb-8">
+              Fill in the details below and it will go straight to my inbox.
             </p>
-            <a
-              href="https://resources.leverbrands.com/work-with-us"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
-            >
-              <Send size={16} />
-              Start the Conversation
-            </a>
 
-            <div className="mt-10 pt-8 border-t border-border">
-              <h3 className="font-semibold text-text-primary text-sm mb-4">Or email directly</h3>
-              <a
-                href="mailto:nader@leverbrands.com"
-                className="text-sm text-accent hover:underline"
-              >
-                nader@leverbrands.com
-              </a>
-            </div>
+            <form
+              action="mailto:nader@leverbrands.co.uk"
+              method="POST"
+              encType="text/plain"
+              className="space-y-4"
+            >
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-1.5">Name</label>
+                  <input type="text" id="name" name="Name" required className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors" placeholder="Your name" />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-1.5">Email</label>
+                  <input type="email" id="email" name="Email" required className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors" placeholder="you@company.com" />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-text-primary mb-1.5">Subject</label>
+                <select id="subject" name="Subject" className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors cursor-pointer">
+                  <option value="Working with LeverBrands">Working with LeverBrands</option>
+                  <option value="Speaking / Podcast">Speaking / Podcast</option>
+                  <option value="Collaboration">Collaboration</option>
+                  <option value="Something Else">Something Else</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-1.5">Message</label>
+                <textarea id="message" name="Message" required rows={5} className="w-full px-4 py-3 rounded-xl border border-border bg-bg-elevated text-text-primary placeholder:text-text-muted text-sm focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent/40 transition-colors resize-y" placeholder="Tell me about your goals..." />
+              </div>
+
+              <button type="submit" className="w-full inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-medium text-sm hover:bg-accent-hover transition-colors cursor-pointer">
+                <Send size={16} />
+                Send Message
+              </button>
+            </form>
           </div>
 
           {/* Right: Social */}
