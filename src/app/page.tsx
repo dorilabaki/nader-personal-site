@@ -128,15 +128,15 @@ export default function Home() {
             </div>
 
             {/* Desktop */}
-            <div data-hero-image className="relative hidden md:block">
-              <div className="absolute inset-0 -top-20 -bottom-20">
+            <div data-hero-image className="relative hidden md:block min-h-[70svh]">
+              <div className="absolute -inset-12">
                 <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[120px] scale-75" />
                 <Image
                   src="/nader-headshot.png"
                   alt="Nader Alnajjar - Founder of LeverBrands"
                   fill
                   className="object-contain object-center drop-shadow-2xl"
-                  sizes="50vw"
+                  sizes="60vw"
                   priority
                 />
               </div>
