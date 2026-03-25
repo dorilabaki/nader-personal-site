@@ -160,8 +160,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="grid grid-cols-3 gap-8 md:gap-12">
             {stats.map((stat) => (
-              <div key={stat.label} data-stat-value className="group">
-                <div className="flex items-center gap-3 mb-3">
+              <div key={stat.label} data-stat-value className="group text-center">
+                <div className="flex items-center justify-center gap-3 mb-3">
                   <stat.icon
                     size={16}
                     className="text-accent opacity-60 group-hover:opacity-100 transition-opacity"
