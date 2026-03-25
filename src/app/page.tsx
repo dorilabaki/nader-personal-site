@@ -94,12 +94,13 @@ export default function Home() {
               src="/nader-headshot.png"
               alt="Nader Alnajjar - Founder of LeverBrands"
               fill
-              className="object-contain object-right-top drop-shadow-2xl"
+              className="object-contain object-right-top opacity-80"
               sizes="60vw"
               priority
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/40 via-10% to-transparent" />
+          <div className="absolute inset-0 shadow-[inset_0_0_80px_40px_rgba(15,13,10,0.7)]" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-28">
