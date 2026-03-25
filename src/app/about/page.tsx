@@ -159,12 +159,6 @@ export default function AboutPage() {
               <dl className="space-y-4 text-sm">
                 <div>
                   <dt className="text-text-muted mb-0.5">
-                    LinkedIn Impressions
-                  </dt>
-                  <dd className="text-accent font-display text-2xl">500M+</dd>
-                </div>
-                <div>
-                  <dt className="text-text-muted mb-0.5">
                     Client Revenue Driven
                   </dt>
                   <dd className="text-accent font-display text-2xl">$10M+</dd>
