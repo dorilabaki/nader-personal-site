@@ -72,7 +72,7 @@ export default function Home() {
       <ScrollAnimations />
 
       {/* ═══════════════════ HERO ═══════════════════ */}
-      <section data-hero className="relative overflow-hidden border-b border-border min-h-[100svh] md:min-h-0 flex flex-col justify-center">
+      <section data-hero className="relative overflow-hidden border-b border-border min-h-[100svh] flex flex-col justify-center">
         {/* Mobile background headshot */}
         <div className="absolute inset-0 md:hidden pointer-events-none">
           <Image
@@ -129,13 +129,13 @@ export default function Home() {
 
             {/* Desktop */}
             <div data-hero-image className="relative hidden md:block">
-              <div className="relative min-h-[600px] -my-8">
-                <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[100px] scale-75 translate-y-12" />
+              <div className="relative min-h-[80svh] -my-12">
+                <div className="absolute inset-0 rounded-full bg-accent/[0.06] blur-[120px] scale-90 translate-y-8" />
                 <Image
                   src="/nader-headshot.png"
                   alt="Nader Alnajjar - Founder of LeverBrands"
                   fill
-                  className="object-contain object-center drop-shadow-2xl"
+                  className="object-contain object-bottom drop-shadow-2xl"
                   sizes="50vw"
                   priority
                 />
