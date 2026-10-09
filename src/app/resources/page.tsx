@@ -50,7 +50,7 @@ const resources = [
   {
     title: "Building Leverage Newsletter",
     description:
-      "The weekly newsletter for founders who want systems. Every Sunday. 2,000+ founders read it.",
+      "The weekly newsletter for founders who want systems. Every Sunday. Free.",
     type: "Newsletter",
     icon: BookOpen,
     url: "https://resources.leverbrands.com/newsletter",

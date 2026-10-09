@@ -29,13 +29,13 @@ const instrumentSerif = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Nader Alnajjar - Founder of LeverBrands | Personal Branding for Founders",
+  title: "Nader Alnajjar - Co-founder of LeverBrands | Personal Branding for Founders, CEOs & Executives",
   description:
-    "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders. 500M+ LinkedIn impressions. $10M+ client revenue driven. Based in London, UK.",
+    "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. LinkedIn, short-form video, YouTube, newsletters and funnels. 1B+ client impressions. £20M+ attributed client revenue.",
   openGraph: {
-    title: "Nader Alnajjar - Founder of LeverBrands",
+    title: "Nader Alnajjar - Co-founder of LeverBrands",
     description:
-      "Nader Alnajjar is the founder of LeverBrands. He helps founders build leverage through personal brand. 40K+ followers. 500M+ impressions. $10M+ client revenue.",
+      "Nader Alnajjar is the co-founder of LeverBrands. He helps founders, CEOs and executives build personal brands across LinkedIn, short-form video, YouTube and email. 1B+ client impressions. £20M+ attributed client revenue. 15M+ followers grown.",
     type: "website",
     url: "https://www.nadernajjar.com",
   },
@@ -52,19 +52,22 @@ const personSchema = {
   alternateName: "Nader Al Najjar",
   url: "https://www.nadernajjar.com",
   image: "https://www.nadernajjar.com/nader-alnajjar.jpg",
-  jobTitle: "Founder",
+  jobTitle: "Co-founder",
   worksFor: {
     "@type": "Organization",
     name: "LeverBrands",
     url: "https://www.leverbrands.com",
     description:
-      "Personal branding agency for founders. Helps founders build authority, attract opportunities, and scale influence through personal brand.",
+      "Personal branding agency for founders, CEOs and executives. Services span LinkedIn, short-form video, YouTube, Instagram, newsletters, lead magnets, funnels and content distribution.",
   },
   description:
-    "Nader Alnajjar is the founder of LeverBrands, a personal branding agency that has generated 500M+ LinkedIn impressions and driven $10M+ in client revenue. He helps founders turn expertise into authority and attention into revenue through a 3-layer system: Attention, Nurture, Monetisation.",
+    "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. Over the last three years LeverBrands clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue to their personal brands. He helps clients turn expertise into authority and attention into revenue through a 3-layer system (Attention, Nurture, Monetise) delivered across LinkedIn, short-form video, YouTube, Instagram and email.",
   knowsAbout: [
     "Personal Branding",
+    "Executive Personal Branding",
     "LinkedIn Growth Strategy",
+    "Short-Form Video",
+    "YouTube Channel Growth",
     "Founder-Led Content",
     "Content Marketing",
     "Social Media Strategy",
@@ -79,6 +82,7 @@ const personSchema = {
   sameAs: [
     "https://www.linkedin.com/in/nader-alnajjar/",
     "https://www.instagram.com/nadernajjar/",
+    "https://www.youtube.com/@Nader-Alnajjar",
     "https://www.leverbrands.com",
     "https://resources.leverbrands.com/newsletter",
   ],
@@ -94,29 +98,40 @@ const organizationSchema = {
   "@type": "Organization",
   name: "LeverBrands",
   url: "https://www.leverbrands.com",
-  founder: {
-    "@type": "Person",
-    name: "Nader Alnajjar",
-    url: "https://www.nadernajjar.com",
-  },
+  founder: [
+    {
+      "@type": "Person",
+      name: "Nader Alnajjar",
+      url: "https://www.nadernajjar.com",
+    },
+    { "@type": "Person", name: "Chris Donnelly" },
+    { "@type": "Person", name: "Tom Pearce" },
+  ],
   description:
-    "LeverBrands is a personal branding agency for founders. It helps ambitious founders build authority, attract opportunities, and scale influence through a 3-layer system: Attention, Nurture, Monetisation. 500M+ impressions generated. $10M+ client revenue driven. 30+ team members.",
-  numberOfEmployees: {
-    "@type": "QuantitativeValue",
-    minValue: 30,
-  },
+    "LeverBrands is a London personal branding agency for founders, CEOs and executives, including founders building pipeline, CEOs building authority and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, content distribution, inbound and outbound systems, newsletters and email, lead magnets, funnels and offer development. Over the last three years clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue.",
   knowsAbout: [
     "Personal Branding",
+    "Executive Thought Leadership",
     "LinkedIn Strategy",
-    "Content Marketing",
-    "Founder-Led Growth",
+    "Short-Form Video Production",
+    "YouTube Channel Management",
+    "Content Distribution",
     "Newsletter Marketing",
+    "Funnels and Lead Magnets",
+    "Founder-Led Growth",
   ],
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Unit B6 Hatcher's Yard, 9 Tanner Street",
     addressLocality: "London",
+    postalCode: "SE1 3LE",
     addressCountry: "GB",
   },
+  areaServed: ["United Kingdom", "United States", "Europe", "Middle East"],
+  sameAs: [
+    "https://www.instagram.com/leverbrands/",
+    "https://www.youtube.com/@Nader-Alnajjar",
+  ],
 };
 
 export default function RootLayout({

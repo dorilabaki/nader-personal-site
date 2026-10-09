@@ -18,9 +18,9 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed max-w-sm">
-              Co-founder of Lever Brands. Helping ambitious founders build
-              authority, attract opportunities, and scale influence through
-              personal branding.
+              Co-founder of LeverBrands. Helping founders, CEOs and executives
+              build authority across LinkedIn, short-form video, YouTube and
+              email, and turn attention into revenue.
             </p>
             <div className="flex gap-2 mt-6">
               {[
@@ -29,7 +29,7 @@ export function Footer() {
                   icon: <LinkedinIcon size={14} />,
                 },
                 {
-                  href: "#",
+                  href: "https://www.youtube.com/@Nader-Alnajjar",
                   icon: <YoutubeIcon size={14} />,
                 },
                 {

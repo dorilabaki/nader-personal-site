@@ -29,9 +29,9 @@ const socials = [
   },
   {
     name: "YouTube",
-    handle: "@naderalnajjar",
-    description: "Coming soon",
-    url: "#",
+    handle: "@Nader-Alnajjar",
+    description: "Weekly videos",
+    url: "https://www.youtube.com/@Nader-Alnajjar",
     icon: YoutubeIcon,
   },
   {

@@ -6,7 +6,7 @@ import { PageAnimations } from "@/components/page-animations";
 export const metadata = {
   title: "My Story - Nader Alnajjar",
   description:
-    "How a COVID lockdown side project became a 30-person personal branding agency. The full story of LeverBrands.",
+    "How a COVID lockdown side project became LeverBrands, a personal branding agency for founders, CEOs and executives behind 1B+ client impressions and £20M+ in attributed client revenue.",
 };
 
 export default function StoryPage() {
@@ -134,13 +134,15 @@ export default function StoryPage() {
                 help me?&quot;
               </p>
               <p>
-                In August 2024, I founded LeverBrands. The idea was simple. Most
+                In August 2024, Chris, Tom Pearce and I co-founded LeverBrands. The idea was simple. Most
                 founders are REALLY good at what they do. But the people who
                 should be buying from them have no idea they exist. They&apos;re
                 invisible.
               </p>
               <p>
-                We don&apos;t just post content and call it a day. We build the full
+                We started on LinkedIn, but we were never going to stop there. Today
+                we run founders&apos; and executives&apos; brands across LinkedIn,
+                short-form video, YouTube, Instagram and email, and build the full
                 infrastructure underneath. A system that turns attention into
                 money in your pocket.
               </p>
@@ -164,8 +166,9 @@ export default function StoryPage() {
                     Layer 1: Attention.
                   </span>{" "}
                   <span className="text-text-secondary">
-                    Get in front of the right people through LinkedIn content,
-                    distribution, short-form video, and targeted outreach.
+                    Get in front of the right people through LinkedIn, short-form
+                    video we script, film and edit, Instagram, distribution across
+                    our media network, and targeted outreach.
                   </span>
                 </div>
                 <div>
@@ -174,13 +177,13 @@ export default function StoryPage() {
                   </span>{" "}
                   <span className="text-text-secondary">
                     Without a system, you&apos;re entertaining strangers. We build
-                    newsletters, funnels, and email sequences that de-platform
-                    your audience.
+                    YouTube channels, newsletters, lead magnets and funnels that
+                    move your audience onto channels you own.
                   </span>
                 </div>
                 <div>
                   <span className="font-semibold text-text-primary">
-                    Layer 3: Monetisation.
+                    Layer 3: Monetise.
                   </span>{" "}
                   <span className="text-text-secondary">
                     We help you turn that audience into actual revenue. Inbound
@@ -191,8 +194,9 @@ export default function StoryPage() {
               </div>
               <p>
                 In less than two years, LeverBrands went from just me to 30+
-                employees. We&apos;ve driven $10M+ in
-                client revenue. And we&apos;re just getting started.
+                people. Over the last three years our clients have generated 1B+
+                impressions, grown 15M+ followers and attributed £20M+ in revenue
+                to their personal brands. And we&apos;re just getting started.
               </p>
             </div>
           </div>
@@ -213,8 +217,8 @@ export default function StoryPage() {
               <p>
                 I&apos;m focused on scaling LeverBrands, building the Building
                 Leverage newsletter into the go-to resource for founder-led
-                growth, and helping more ambitious people turn their expertise
-                into authority.
+                growth, and helping more founders, CEOs and executives turn their
+                expertise into authority, on every platform their buyers use.
               </p>
               <p>The window is wide open. And I&apos;m just getting started.</p>
             </div>

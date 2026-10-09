@@ -6,9 +6,9 @@ import { PageAnimations } from "@/components/page-animations";
 import { LinkedinIcon } from "@/components/icons";
 
 export const metadata = {
-  title: "Who is Nader Alnajjar? | Founder of LeverBrands",
+  title: "Who is Nader Alnajjar? | Co-founder of LeverBrands",
   description:
-    "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders based in London. 500M+ LinkedIn impressions. $10M+ client revenue driven. 40K+ followers.",
+    "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. LinkedIn, short-form video, YouTube and email. 1B+ client impressions. £20M+ attributed client revenue.",
   alternates: {
     canonical: "https://www.nadernajjar.com/about",
   },
@@ -21,10 +21,26 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
+      name: "Is LeverBrands just a LinkedIn agency?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. LinkedIn is where LeverBrands started, but it now runs personal brands across LinkedIn, short-form video, YouTube, Instagram and Facebook, and email. Short-form video is handled end to end, from ideas and filming to editing and publishing, and YouTube channels are fully managed. Underneath the content it builds newsletters, lead magnets, funnels and offers.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who does LeverBrands work with?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "LeverBrands works with three types of client: founders building pipeline who want their expertise to generate inbound leads and revenue; CEOs and executives building authority with customers, investors, talent, partners and press; and exited founders repositioning around their next chapter. Clients are based in the UK, US, Europe and the Middle East and typically spend around one hour a week on their brand.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Who is Nader Alnajjar?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nader Alnajjar is the founder of LeverBrands, a personal branding agency based in London, UK. He helps founders build authority, attract opportunities, and scale influence through personal brand. LeverBrands has generated 500M+ LinkedIn impressions and driven $10M+ in client revenue.",
+        text: "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. He helps clients build authority, attract opportunities and turn attention into revenue across LinkedIn, short-form video, YouTube, Instagram and email. Over the last three years LeverBrands clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue to their personal brands.",
       },
     },
     {
@@ -32,7 +48,7 @@ const faqSchema = {
       name: "What is LeverBrands?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "LeverBrands is a personal branding agency for founders, co-founded by Nader Alnajjar and Chris Donnelly. The agency has generated 500M+ LinkedIn impressions, driven $10M+ in client revenue, and grown to 30+ employees. LeverBrands uses a 3-layer system: Attention (LinkedIn content, distribution, short-form video), Nurture (newsletters, funnels, email sequences), and Monetisation (inbound leads, digital products, consulting, speaking gigs).",
+        text: "LeverBrands is a London personal branding agency co-founded by Nader Alnajjar, Chris Donnelly and Tom Pearce. It works with founders building pipeline, CEOs and executives building authority, and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, distribution across its media network, inbound and outbound systems, newsletters, lead magnets, funnels and offer development. Clients have generated 1B+ impressions, 15M+ followers and £20M+ in attributed revenue over the last three years.",
       },
     },
     {
@@ -40,7 +56,7 @@ const faqSchema = {
       name: "What does Nader Alnajjar do?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nader Alnajjar helps founders build personal brands that generate inbound revenue. He runs LeverBrands, writes the Building Leverage newsletter (2,000+ weekly readers, published every Sunday), and creates content on LinkedIn (40,000+ followers). His focus areas include LinkedIn content strategy, personal brand positioning, founder-led growth, and turning attention into revenue.",
+        text: "Nader Alnajjar co-runs LeverBrands, where he builds personal brands for founders, CEOs and executives that generate inbound revenue. The work spans LinkedIn, short-form video, YouTube, Instagram, newsletters and funnels. He also writes the Building Leverage newsletter, published every Sunday, and posts on LinkedIn and YouTube.",
       },
     },
     {
@@ -48,7 +64,7 @@ const faqSchema = {
       name: "What is the Building Leverage newsletter?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Building Leverage is a weekly newsletter by Nader Alnajjar, published every Sunday. It covers the exact tools, processes, and breakdowns used at LeverBrands to build founder personal brands. Topics include LinkedIn content strategy, hook writing frameworks, AI tools for content, newsletter and funnel design, and turning followers into revenue. It has 2,000+ weekly readers.",
+        text: "Building Leverage is a weekly newsletter by Nader Alnajjar, published every Sunday. It breaks down the tools, processes and strategies used at LeverBrands to build founder and executive personal brands, covering content strategy, short-form video, newsletters and funnels, AI tools for content, and turning attention into revenue.",
       },
     },
     {
@@ -56,7 +72,7 @@ const faqSchema = {
       name: "What results has Nader Alnajjar achieved for clients?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nader Alnajjar's agency LeverBrands has achieved: Built Chris Donnelly's brand to 3M+ followers and a $10M/year business with an AI SaaS product hitting $60K MRR in 14 days. Grew Rohan Sheth from 2K to 100K followers in 10 months, driving $300K ARR without cold outreach. Built a lead magnet funnel for a B2B SaaS generating 6 qualified inbound leads per week without ads. Helped a platform founder hit 1.3M impressions in his first 30 days posting.",
+        text: "LeverBrands grew Richard Harpin (founder of HomeServe) from 20K to 80K+ LinkedIn followers alongside a Sunday Times bestselling book; grew Rohan Sheth (founder of GrowRev) from 2K to 100K followers in 10 months with 50M impressions, with his brand now driving 40% of new business; helped dermatologist and author Dr Felix Bertram reach 110K+ LinkedIn followers, a bestselling book and a top podcast in Germany's health category; and built co-founder Chris Donnelly's brand to 3M+ followers. Across all clients: 1B+ impressions, 15M+ followers grown and £20M+ attributed revenue.",
       },
     },
     {
@@ -64,7 +80,7 @@ const faqSchema = {
       name: "What did Nader Alnajjar do before LeverBrands?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Before founding LeverBrands in August 2024, Nader spent 5 years at M&G plc in finance. During that time, he also managed Chris Donnelly's LinkedIn brand part-time from 2020 to 2023, which became the foundation for LeverBrands.",
+        text: "Before co-founding LeverBrands in August 2024, Nader spent 5 years at M&G plc in finance. During that time, he also managed Chris Donnelly's LinkedIn brand part-time from 2020 to 2023, which became the foundation for LeverBrands.",
       },
     },
     {
@@ -72,7 +88,7 @@ const faqSchema = {
       name: "How did Nader Alnajjar start LeverBrands?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "During the 2020 COVID lockdown, Nader Alnajjar was living with Chris Donnelly in East London. They started building Chris's LinkedIn presence from scratch as a side project while Nader worked as a Quantitative Analyst at M&G. The strategies they developed grew Chris's brand to 3M+ followers and became the foundation for LeverBrands, which Nader founded in August 2024. The agency grew from 1 person to 30+ employees in under two years.",
+        text: "During the 2020 COVID lockdown, Nader Alnajjar was living with Chris Donnelly in East London. They started building Chris's LinkedIn presence from scratch as a side project while Nader worked as a Quantitative Analyst at M&G. The strategies they developed grew Chris's brand to 3M+ followers and became the foundation for LeverBrands, which Nader co-founded in August 2024 with Chris Donnelly and Tom Pearce. The agency grew from 1 person to 30+ employees in under two years.",
       },
     },
     {
@@ -80,7 +96,7 @@ const faqSchema = {
       name: "What is Nader Alnajjar's 3-layer system?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nader Alnajjar's 3-layer system at LeverBrands consists of: Layer 1 Attention - getting founders in front of the right people through LinkedIn content, distribution, short-form video, and targeted outreach. Layer 2 Nurture - building newsletters, funnels, and email sequences that de-platform the audience and nurture them until they are ready to buy. Layer 3 Monetisation - turning attention into actual revenue through inbound leads, digital product sales, consulting opportunities, speaking gigs, or partnerships.",
+        text: "Nader Alnajjar's 3-layer system at LeverBrands consists of: Layer 1 Attention - personal brand strategy, LinkedIn management, short-form video, Instagram content, distribution across the LeverBrands media network, and inbound and outbound systems. Layer 2 Nurture - YouTube channel management, newsletters and email, lead magnets and funnels that move the audience onto owned channels. Layer 3 Monetise - offer development, digital products, group programmes, consulting, speaking and partnerships.",
       },
     },
   ],
@@ -107,9 +123,9 @@ export default function AboutPage() {
             Who is <span className="italic text-accent">Nader Alnajjar</span>?
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
-            Founder of LeverBrands. Personal branding for founders. Based in
-            London. $10M+ client revenue. 40K+ LinkedIn
-            followers.
+            Co-founder of LeverBrands. Personal branding for founders, CEOs and
+            executives across LinkedIn, short-form video, YouTube and email.
+            Based in London.
           </p>
         </div>
       </section>
@@ -131,7 +147,7 @@ export default function AboutPage() {
                 <div>
                   <dt className="text-text-muted mb-0.5">Role</dt>
                   <dd className="text-text-primary font-medium">
-                    Founder, LeverBrands
+                    Co-founder, LeverBrands
                   </dd>
                 </div>
                 <div>
@@ -143,33 +159,31 @@ export default function AboutPage() {
                 <div>
                   <dt className="text-text-muted mb-0.5">Focus</dt>
                   <dd className="text-text-primary font-medium">
-                    Building Leverage Through Personal Branding and AI
+                    Personal Brands for Founders, CEOs &amp; Executives
                   </dd>
                 </div>
                 <div>
                   <dt className="text-text-muted mb-0.5">Newsletter</dt>
                   <dd className="text-text-primary font-medium">
-                    Building Leverage (weekly, 2,000+ readers)
+                    Building Leverage (every Sunday)
                   </dd>
                 </div>
               </dl>
             </div>
             <div>
-              <h2 className="font-display text-2xl mb-6">Key Metrics</h2>
+              <h2 className="font-display text-2xl mb-6">Client Results</h2>
               <dl className="space-y-4 text-sm">
                 <div>
-                  <dt className="text-text-muted mb-0.5">
-                    Client Revenue Driven
-                  </dt>
-                  <dd className="text-accent font-display text-2xl">$10M+</dd>
+                  <dt className="text-text-muted mb-0.5">Impressions Generated</dt>
+                  <dd className="text-accent font-display text-2xl">1B+</dd>
                 </div>
                 <div>
-                  <dt className="text-text-muted mb-0.5">LinkedIn Followers</dt>
-                  <dd className="text-accent font-display text-2xl">40,000+</dd>
+                  <dt className="text-text-muted mb-0.5">Attributed Client Revenue</dt>
+                  <dd className="text-accent font-display text-2xl">£20M+</dd>
                 </div>
                 <div>
-                  <dt className="text-text-muted mb-0.5">Team Size</dt>
-                  <dd className="text-accent font-display text-2xl">30+</dd>
+                  <dt className="text-text-muted mb-0.5">Followers Grown</dt>
+                  <dd className="text-accent font-display text-2xl">15M+</dd>
                 </div>
               </dl>
             </div>
@@ -182,10 +196,12 @@ export default function AboutPage() {
             <h2 className="font-display text-3xl mb-4">Background</h2>
             <div className="space-y-4 text-text-secondary leading-[1.8]">
               <p>
-                Nader Alnajjar is the founder of LeverBrands, a personal
-                branding agency for founders based in London, UK. He is known
-                for helping invisible founders become visible, turning expertise
-                into authority and attention into revenue.
+                Nader Alnajjar is the co-founder of LeverBrands, a personal
+                branding agency based at London Bridge that works with founders,
+                CEOs and executives across the UK, US, Europe and the Middle
+                East. He is known for helping brilliant people become impossible
+                to ignore, turning expertise into authority and attention into
+                revenue.
               </p>
               <p>
                 Before founding LeverBrands, Nader spent five years in finance
@@ -216,9 +232,11 @@ export default function AboutPage() {
                 $10M/year, and an AI SaaS product that hit $60K MRR in 14 days.
               </p>
               <p>
-                In August 2024, Nader founded LeverBrands to bring this
-                approach to other founders. The agency grew from 1 person to 30+
-                employees in under two years.
+                In August 2024, Nader co-founded LeverBrands with Chris and Tom
+                Pearce to bring this approach to other founders and executives.
+                The agency grew from 1 person to 30+ people in under two years,
+                and its clients have since generated 1B+ impressions and £20M+
+                in attributed revenue.
               </p>
               <div className="rounded-2xl overflow-hidden border border-border mt-6">
                 <Image
@@ -238,38 +256,40 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-text-secondary leading-[1.8]">
               <p>
-                Nader helps founders build personal brands that generate inbound
-                revenue through a 3-layer system:
+                Nader helps founders, CEOs and executives build personal brands
+                that generate inbound revenue. LinkedIn is one channel of
+                several: the team also produces short-form video end to end,
+                manages YouTube channels, and runs Instagram, newsletters and
+                funnels. It all sits inside a 3-layer system:
               </p>
               <div className="bg-bg-elevated rounded-xl border border-border p-6 space-y-4 text-sm">
                 <div>
                   <strong className="text-text-primary">Layer 1: Attention.</strong>{" "}
-                  Getting founders in front of the right people through LinkedIn
-                  content, distribution, short-form video, and targeted
-                  outreach.
+                  Personal brand strategy, LinkedIn management, short-form video
+                  (ideas, filming, editing and publishing), Instagram content,
+                  distribution across the LeverBrands media network, and inbound
+                  and outbound systems.
                 </div>
                 <div>
                   <strong className="text-text-primary">Layer 2: Nurture.</strong>{" "}
-                  Building newsletters, funnels, and email sequences that
-                  de-platform the audience and nurture them until they are ready
-                  to buy.
+                  YouTube channel management, newsletters and email, lead magnets
+                  and funnels that move the audience onto owned channels and
+                  nurture them until they are ready to buy.
                 </div>
                 <div>
                   <strong className="text-text-primary">
-                    Layer 3: Monetisation.
+                    Layer 3: Monetise.
                   </strong>{" "}
-                  Turning attention into actual revenue through inbound leads,
-                  digital product sales, consulting, speaking gigs, or
-                  partnerships.
+                  Offer development, digital products, group programmes,
+                  consulting, speaking and partnerships.
                 </div>
               </div>
               <p>
                 He also writes the Building Leverage newsletter, published every
                 Sunday. It covers the exact tools, processes, and breakdowns
-                used at LeverBrands. Topics include LinkedIn content strategy,
-                hook writing, AI tools for content creation, and turning
-                followers into paying clients. The newsletter has 2,000+ weekly
-                readers.
+                used at LeverBrands. Topics include content strategy across
+                platforms, short-form video, AI tools for content creation, and
+                turning followers into paying clients.
               </p>
               <div className="rounded-2xl overflow-hidden border border-border mt-6">
                 <Image
@@ -294,39 +314,31 @@ export default function AboutPage() {
                 <li className="flex gap-3">
                   <span className="text-accent font-bold mt-0.5">-</span>
                   <span>
-                    Built Chris Donnelly's brand to 3M+ followers, a business
-                    generating $10M/year, and an AI SaaS product that hit $60K
-                    MRR in 14 days.
+                    Grew Richard Harpin, founder of HomeServe, from 20K to 80K+ followers (4x+ audience growth) alongside a Sunday Times bestselling book.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent font-bold mt-0.5">-</span>
                   <span>
-                    Grew Rohan Sheth from 2K to 100K followers in 10 months,
-                    driving $300K in annual recurring revenue without a single
-                    cold outreach campaign.
+                    Grew Rohan Sheth, founder of GrowRev, from 2K to 100K followers in 10 months with 50M impressions. His personal brand now drives 40% of new business.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent font-bold mt-0.5">-</span>
                   <span>
-                    Built a lead magnet funnel for a B2B SaaS that generates 6
-                    qualified inbound leads per week without any paid
-                    advertising.
+                    Helped dermatologist and author Dr Felix Bertram reach 110K+ LinkedIn followers, a bestselling book and a top podcast in Germany&apos;s health category.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent font-bold mt-0.5">-</span>
                   <span>
-                    Helped a platform founder hit 1.3M impressions in his first
-                    30 days posting on LinkedIn.
+                    Built co-founder Chris Donnelly&apos;s brand to 3M+ followers, behind a business generating $10M/year.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent font-bold mt-0.5">-</span>
                   <span>
-                    Enabled a coach to quit their full-time job and generate
-                    $100K/year from their personal brand.
+                    Across all clients over the last three years: 1B+ impressions, 15M+ followers grown and £20M+ in attributed revenue.
                   </span>
                 </li>
               </ul>
@@ -341,7 +353,7 @@ export default function AboutPage() {
               {[
                 {
                   title: "Personal Branding",
-                  description: "Positioning founders as known authorities through LinkedIn content, storytelling, and consistent visibility across platforms.",
+                  description: "Positioning founders, CEOs and executives as known authorities through storytelling and consistent visibility on LinkedIn, Instagram and YouTube.",
                 },
                 {
                   title: "Content-to-Revenue Systems",
@@ -349,7 +361,11 @@ export default function AboutPage() {
                 },
                 {
                   title: "Founder-Led Growth",
-                  description: "Helping founders use personal brand as their primary growth channel. $10M+ client revenue driven.",
+                  description: "Helping founders use personal brand as their primary growth channel. £20M+ in attributed client revenue.",
+                },
+                {
+                  title: "Short-Form Video & YouTube",
+                  description: "Video handled end to end, from ideas and filming to editing and publishing, plus full YouTube channel management for long-form depth.",
                 },
                 {
                   title: "AI Tools for Content",
@@ -376,31 +392,39 @@ export default function AboutPage() {
               {[
                 {
                   q: "Who is Nader Alnajjar?",
-                  a: "Nader Alnajjar is the founder of LeverBrands, a personal branding agency for founders based in London, UK. He helps founders build authority, attract opportunities, and scale influence through personal brand. LeverBrands has generated 500M+ impressions and driven $10M+ in client revenue.",
+                  a: "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. He helps clients build authority, attract opportunities and turn attention into revenue across LinkedIn, short-form video, YouTube, Instagram and email. Over the last three years LeverBrands clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue to their personal brands.",
                 },
                 {
                   q: "What is LeverBrands?",
-                  a: "LeverBrands is a personal branding agency for founders, co-founded by Nader Alnajjar. The agency has generated 500M+ LinkedIn impressions, driven $10M+ in client revenue, and grown to 30+ employees in under two years. It uses a 3-layer system: Attention, Nurture, Monetisation.",
+                  a: "LeverBrands is a London personal branding agency co-founded by Nader Alnajjar, Chris Donnelly and Tom Pearce. It works with founders building pipeline, CEOs and executives building authority, and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, distribution across its media network, inbound and outbound systems, newsletters, lead magnets, funnels and offer development. Clients have generated 1B+ impressions, 15M+ followers and £20M+ in attributed revenue over the last three years.",
+                },
+                {
+                  q: "Is LeverBrands just a LinkedIn agency?",
+                  a: "No. LinkedIn is where LeverBrands started, but it now runs personal brands across LinkedIn, short-form video, YouTube, Instagram and email. Short-form video is handled end to end, from ideas and filming to editing and publishing, and YouTube channels are fully managed. Underneath the content it builds newsletters, lead magnets, funnels and offers.",
+                },
+                {
+                  q: "Who does LeverBrands work with?",
+                  a: "Founders building pipeline, CEOs and executives building authority, and exited founders repositioning for their next chapter. Clients are in the UK, US, Europe and the Middle East, and typically spend around one hour a week on their brand.",
                 },
                 {
                   q: "What is the Building Leverage newsletter?",
-                  a: "Building Leverage is Nader Alnajjar's weekly newsletter, published every Sunday. It covers the exact tools, processes, and breakdowns used at LeverBrands. Topics include LinkedIn strategy, AI tools, content frameworks, and founder-led growth. 2,000+ founders read it weekly.",
+                  a: "Building Leverage is Nader Alnajjar's weekly newsletter, published every Sunday. It breaks down the tools, processes and strategies used at LeverBrands, covering content strategy across platforms, short-form video, AI tools, newsletters and funnels, and founder-led growth.",
                 },
                 {
                   q: "What results has LeverBrands achieved?",
-                  a: "LeverBrands has built Chris Donnelly's brand to 3M+ followers and a $10M/year business, grew Rohan Sheth from 2K to 100K followers in 10 months ($300K ARR), and generated 6 qualified inbound leads/week for a B2B SaaS with no ads. Total: 500M+ impressions and $10M+ client revenue.",
+                  a: "LeverBrands grew Richard Harpin (founder of HomeServe) from 20K to 80K+ LinkedIn followers alongside a Sunday Times bestselling book; grew Rohan Sheth (founder of GrowRev) from 2K to 100K followers in 10 months with 50M impressions, with his brand now driving 40% of new business; helped dermatologist and author Dr Felix Bertram reach 110K+ LinkedIn followers, a bestselling book and a top podcast in Germany's health category; and built co-founder Chris Donnelly's brand to 3M+ followers. Across all clients: 1B+ impressions, 15M+ followers grown and £20M+ attributed revenue.",
                 },
                 {
                   q: "How does Nader Alnajjar's 3-layer system work?",
-                  a: "Layer 1 (Attention): LinkedIn content, distribution, short-form video, and targeted outreach. Layer 2 (Nurture): newsletters, funnels, and email sequences that de-platform the audience. Layer 3 (Monetisation): converting attention into revenue through inbound leads, digital products, consulting, speaking, and partnerships.",
+                  a: "Layer 1 (Attention): personal brand strategy, LinkedIn management, short-form video, Instagram content, distribution and inbound/outbound systems. Layer 2 (Nurture): YouTube channel management, newsletters, lead magnets and funnels. Layer 3 (Monetise): offer development, digital products, group programmes, consulting, speaking and partnerships.",
                 },
                 {
                   q: "Where is Nader Alnajjar based?",
-                  a: "Nader Alnajjar is based in London, England, United Kingdom. LeverBrands operates as a hybrid agency from the London area.",
+                  a: "Nader Alnajjar is based in London, UK. LeverBrands' office is at Hatcher's Yard, London Bridge, and it works with clients across the UK, US, Europe and the Middle East.",
                 },
                 {
                   q: "What did Nader Alnajjar do before LeverBrands?",
-                  a: "Before founding LeverBrands in August 2024, Nader spent 5 years at M&G plc in finance. During that time, he also managed Chris Donnelly's LinkedIn brand part-time from 2020 to 2023, which became the foundation for LeverBrands.",
+                  a: "Before co-founding LeverBrands in August 2024, Nader spent 5 years at M&G plc in finance. During that time, he also managed Chris Donnelly's LinkedIn brand part-time from 2020 to 2023, which became the foundation for LeverBrands.",
                 },
               ].map((item) => (
                 <details
@@ -444,8 +468,8 @@ export default function AboutPage() {
                   url: "https://www.instagram.com/nadernajjar/",
                 },
                 {
-                  label: "YouTube (Coming Soon)",
-                  url: "#",
+                  label: "YouTube",
+                  url: "https://www.youtube.com/@Nader-Alnajjar",
                 },
                 {
                   label: "Free LinkedIn Starter Pack",

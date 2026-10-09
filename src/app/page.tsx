@@ -8,38 +8,73 @@ import {
   TrendingUp,
   Mail,
   Target,
-  DollarSign,
+  PoundSterling,
   ArrowUpRight,
+  Briefcase,
+    Repeat,
 } from "lucide-react";
 import { ScrollAnimations } from "@/components/scroll-animations";
 
 const stats = [
-  { value: "40K+", label: "Followers", icon: Users },
-  { value: "$10M+", label: "Client Revenue", icon: DollarSign },
-  { value: "30+", label: "Team Members", icon: Rocket },
+  { value: "1B+", label: "Client Impressions", icon: Eye },
+  { value: "£20M+", label: "Client Revenue", icon: PoundSterling },
+  { value: "15M+", label: "Followers Grown", icon: Users },
+];
+
+const clientProfiles = [
+  {
+    title: "Founders Building Pipeline",
+    description:
+      "You're great at what you do, but deals still depend on referrals and outreach. We turn your expertise into inbound leads, booked calls, and revenue.",
+    icon: Rocket,
+  },
+  {
+    title: "CEOs & Executives Building Authority",
+    description:
+      "You need a consistent public voice that reaches customers, investors, talent, partners, and press. We build it around you, for about an hour of your time a week.",
+    icon: Briefcase,
+  },
+  {
+    title: "Exited Founders",
+    description:
+      "You've sold the business. Now you want to be known for what comes next. We reposition your name around your next chapter.",
+    icon: Repeat,
+  },
 ];
 
 const results = [
   {
-    name: "Chris Donnelly",
-    metric: "3M+ followers",
-    detail: "$10M/year business. AI SaaS at $60K MRR in 14 days.",
+    name: "Richard Harpin, Founder of HomeServe",
+    metric: "20K to 80K+ followers",
+    detail: "4x+ audience growth and a Sunday Times bestselling book.",
   },
   {
-    name: "Rohan Sheth",
+    name: "Rohan Sheth, Founder of GrowRev",
     metric: "2K to 100K followers",
-    detail: "10 months. $300K ARR. Zero cold outreach.",
+    detail: "10 months. 50M impressions. His brand now drives 40% of new business.",
   },
   {
-    name: "B2B SaaS Founder",
-    metric: "6 leads/week",
-    detail: "Qualified inbound from a lead magnet funnel. No ads.",
+    name: "Dr Felix Bertram, Dermatologist & Author",
+    metric: "110K+ followers",
+    detail: "A bestselling book and a top podcast in Germany's health category.",
   },
   {
-    name: "Platform Founder",
-    metric: "1.3M impressions",
-    detail: "First 30 days posting. From zero to visible.",
+    name: "Chris Donnelly, Co-founder",
+    metric: "3M+ followers",
+    detail: "The first brand we built. A $10M/year business behind it.",
   },
+];
+
+const clientLogos = [
+  "HomeServe",
+  "Deloitte",
+  "BCG",
+  "Polymarket",
+  "GrowRev",
+  "Searchable",
+  "Lottie",
+  "EOS",
+  "digistore24",
 ];
 
 const layers = [
@@ -47,21 +82,40 @@ const layers = [
     number: "01",
     title: "Attention",
     description:
-      "Get in front of the right people through LinkedIn content, distribution, short-form video, and targeted outreach.",
+      "Get your name in front of the right people, on every platform where your buyers spend time.",
+    services: [
+      "Personal brand strategy",
+      "LinkedIn management",
+      "Short-form video: ideas, filming, editing, publishing",
+      "Instagram & Facebook content",
+      "Distribution across our media network",
+      "Inbound & outbound systems",
+    ],
     icon: Eye,
   },
   {
     number: "02",
     title: "Nurture",
     description:
-      "Build newsletters, funnels, and email sequences that de-platform your audience and nurture them until they're ready to buy.",
+      "Move your audience off rented platforms and build the trust that makes them ready to buy.",
+    services: [
+      "YouTube channel management",
+      "Newsletters & email",
+      "Lead magnets",
+      "Funnels & landing pages",
+    ],
     icon: Target,
   },
   {
     number: "03",
-    title: "Monetisation",
+    title: "Monetise",
     description:
-      "Turn attention into revenue. Inbound leads, digital products, consulting, speaking gigs, or partnerships.",
+      "Turn attention into revenue: inbound clients, digital products, group programmes, speaking, and partnerships.",
+    services: [
+      "Offer development",
+      "Digital products & programmes",
+      "Book & podcast launches",
+    ],
     icon: TrendingUp,
   },
 ];
@@ -92,7 +146,7 @@ export default function Home() {
           <div className="absolute -right-[10%] top-[5%] -bottom-[5%] w-[110%]">
             <Image
               src="/nader-headshot.png"
-              alt="Nader Alnajjar - Founder of LeverBrands"
+              alt="Nader Alnajjar - Co-founder of LeverBrands"
               fill
               className="object-contain object-right-top opacity-80"
               sizes="60vw"
@@ -118,8 +172,9 @@ export default function Home() {
 
               {/* Subhead */}
               <p className="text-text-secondary text-lg leading-relaxed max-w-md mb-8 animate-fade-up" style={{ animationDelay: "200ms" }}>
-                I help ambitious founders build leverage through personal brand and AI.
-                Turning expertise into authority, and attention into revenue.
+                I help founders, CEOs and executives become the most visible name
+                in their industry. Across LinkedIn, short-form video, YouTube and
+                email, turning expertise into authority and attention into revenue.
               </p>
 
               {/* CTAs */}
@@ -219,9 +274,17 @@ export default function Home() {
               grew into something much bigger.
             </p>
             <p data-reveal>
-              That side project became LeverBrands. We went from 1 person to 30+
-              employees in under two years. $10M+ in client
-              revenue. And we're just getting started.
+              That side project became LeverBrands, which I co-founded with
+              Chris and Tom Pearce. We went from 1 person to 30+ people in under
+              two years. Over the last three years our clients have generated
+              1B+ impressions, grown 15M+ followers, and attributed £20M+ in
+              revenue to their personal brands.
+            </p>
+            <p data-reveal>
+              Today we work with founders, CEOs and executives across the UK,
+              US, Europe and the Middle East. LinkedIn is where it started, but
+              it's now one channel of many: short-form video, YouTube,
+              Instagram, newsletters and the funnels that sit underneath.
             </p>
           </div>
         </div>
@@ -241,6 +304,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══════════════════ WHO I WORK WITH ═══════════════════ */}
+      <section className="relative border-t border-border">
+        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28">
+          <div className="max-w-xl mb-16" data-reveal-left>
+            <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
+              Who I Work With
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl mt-4 leading-[1.1]">
+              Founders, CEOs and{" "}
+              <span className="italic text-accent">Executives</span>.
+            </h2>
+            <p className="text-text-secondary mt-6 leading-relaxed">
+              Brilliant people whose reputation should be working harder than
+              it is. You don&apos;t need a big following to start.
+            </p>
+          </div>
+
+          <div data-stagger-cards className="grid md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+            {clientProfiles.map((profile) => (
+              <div key={profile.title} className="bg-bg-card p-10 hover:bg-bg-card-hover transition-colors duration-300 group">
+                <profile.icon size={20} className="text-accent mb-6" />
+                <h3 className="font-display text-2xl mb-3 group-hover:text-accent transition-colors">
+                  {profile.title}
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  {profile.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-14 text-center" data-reveal>
+            <span className="text-xs uppercase tracking-[0.2em] text-text-muted font-medium">
+              Clients from
+            </span>
+            <div className="mt-5 flex flex-wrap justify-center gap-x-8 gap-y-3 font-display text-xl md:text-2xl text-text-secondary">
+              {clientLogos.map((logo) => (
+                <span key={logo}>{logo}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════════════ 3 LAYERS ═══════════════════ */}
       <section className="relative border-y border-border overflow-hidden">
         {/* Background glow */}
@@ -249,7 +356,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
           <div className="max-w-xl mb-20" data-reveal-left>
             <span className="text-xs uppercase tracking-[0.2em] text-accent font-medium">
-              The System
+              What We Do
             </span>
             <h2 className="font-display text-4xl md:text-5xl mt-4 leading-[1.1]">
               Three Layers That Turn{" "}
@@ -258,8 +365,9 @@ export default function Home() {
               Into Money in Your Pocket.
             </h2>
             <p className="text-text-secondary mt-6 leading-relaxed">
-              Most agencies post for you and call it a day. We build the
-              infrastructure underneath.
+              Not just a LinkedIn agency. We run your brand across LinkedIn,
+              short-form video, YouTube, Instagram and email, then build the
+              infrastructure underneath that turns attention into revenue.
             </p>
           </div>
 
@@ -267,7 +375,7 @@ export default function Home() {
             {layers.map((layer) => (
               <div
                 key={layer.number}
-                className="bg-bg-card p-10 hover:bg-bg-card-hover transition-colors duration-300 cursor-pointer group"
+                className="bg-bg-card p-10 hover:bg-bg-card-hover transition-colors duration-300 group"
               >
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-xs font-mono text-accent/60">
@@ -282,9 +390,17 @@ export default function Home() {
                 <h3 className="font-display text-2xl mb-3 group-hover:text-accent transition-colors">
                   {layer.title}
                 </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
+                <p className="text-sm text-text-secondary leading-relaxed mb-6">
                   {layer.description}
                 </p>
+                <ul className="space-y-2">
+                  {layer.services.map((service) => (
+                    <li key={service} className="flex gap-2 text-sm text-text-primary">
+                      <span className="text-accent">+</span>
+                      {service}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
@@ -346,7 +462,7 @@ export default function Home() {
           </h2>
           <p className="text-text-secondary mb-10 max-w-md mx-auto">
             Every Sunday. The exact tools, processes, and breakdowns we use at
-            LeverBrands. 2,000+ founders read it weekly.
+            LeverBrands to grow founder brands across every platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

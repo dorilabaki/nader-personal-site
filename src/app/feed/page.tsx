@@ -81,12 +81,15 @@ export default function FeedPage() {
               Follow on LinkedIn
               <ExternalLink size={12} />
             </a>
-            <span
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000]/40 text-white/60 rounded-xl text-sm font-medium cursor-default"
+            <a
+              href="https://www.youtube.com/@Nader-Alnajjar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000] text-white rounded-xl text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
               <YoutubeIcon size={14} />
-              YouTube Coming Soon
-            </span>
+              Subscribe on YouTube
+            </a>
           </div>
         </div>
       </section>
@@ -135,14 +138,20 @@ export default function FeedPage() {
 
           <div className="bg-bg-card rounded-2xl border border-border p-16 text-center">
             <YoutubeIcon size={40} className="text-text-muted/20 mx-auto mb-4" />
-            <h3 className="font-display text-2xl mb-2">Coming Soon</h3>
+            <h3 className="font-display text-2xl mb-2">New Videos Every Week</h3>
             <p className="text-text-secondary text-sm max-w-md mx-auto mb-6">
-              Video content is on the way. Subscribe to be the first to know.
+              Personal branding for founders and CEOs, plus behind the scenes
+              at LeverBrands.
             </p>
-            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000]/40 text-white/60 rounded-xl text-sm font-medium cursor-default">
+            <a
+              href="https://www.youtube.com/@Nader-Alnajjar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF0000] text-white rounded-xl text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+            >
               <YoutubeIcon size={14} />
-              Coming Soon
-            </span>
+              Watch on YouTube
+            </a>
           </div>
         </div>
 

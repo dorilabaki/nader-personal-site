@@ -17,9 +17,9 @@ const benefits = [
   },
   {
     icon: Users,
-    title: "2,000+ Founders",
+    title: "Founders & CEOs",
     description:
-      "Join a community of ambitious founders building leverage through content and personal brand.",
+      "Join founders and executives building leverage through content and personal brand.",
   },
   {
     icon: Clock,
@@ -72,7 +72,7 @@ export default function NewsletterPage() {
                 Subscribe for free
               </h3>
               <p className="text-sm text-text-secondary mb-6">
-                Join 2,000+ founders. No spam. Unsubscribe anytime.
+                Free. No spam. Unsubscribe anytime.
               </p>
 
               {/*
@@ -168,7 +168,7 @@ export default function NewsletterPage() {
           <h2 className="font-display text-3xl md:text-4xl leading-[1.1] mb-4">
             The tools and playbooks that built
             <br />
-            $10M+ in client revenue.
+            £20M+ in client revenue.
           </h2>
           <p className="text-text-secondary mb-8 text-sm">
             Delivered to your inbox every Sunday. Free.

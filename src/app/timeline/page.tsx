@@ -45,29 +45,29 @@ const timeline = [
   },
   {
     year: "2024",
-    title: "LeverBrands Founded",
-    subtitle: "Founder, London",
+    title: "LeverBrands Co-founded",
+    subtitle: "Co-founder, London",
     description:
       "Left M&G after 5 years to go all-in on the mission: making invisible founders visible. Built a full-service personal branding agency with the 3-layer system.",
     icon: Rocket,
-    tag: "Founder",
+    tag: "Co-founder",
     accent: true,
   },
   {
     year: "2025",
     title: "30+ Team Members",
-    subtitle: "$10M+ client revenue driven",
+    subtitle: "Beyond LinkedIn",
     description:
-      "LeverBrands scaled from 1 to 30+ employees in under two years. Rohan Sheth: 2K to 100K followers in 10 months. B2B SaaS: 6 inbound leads/week with no ads.",
+      "LeverBrands scaled from 1 to 30+ people in under two years and expanded into short-form video, YouTube, Instagram and email. Rohan Sheth: 2K to 100K followers in 10 months. Richard Harpin of HomeServe: 20K to 80K+.",
     icon: Users,
     tag: "Scale",
   },
   {
     year: "2026",
-    title: "Building Leverage at Scale",
-    subtitle: "Newsletter, community, and the next chapter",
+    title: "1B+ Impressions, £20M+ Client Revenue",
+    subtitle: "Founders, CEOs and executives across four regions",
     description:
-      "Launching the Building Leverage newsletter, expanding the team, and doubling down on helping founders turn personal brand into their most valuable business asset.",
+      "Clients across the UK, US, Europe and the Middle East have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue. Building Leverage goes out every Sunday.",
     icon: TrendingUp,
     tag: "Now",
     accent: true,
