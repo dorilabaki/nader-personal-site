@@ -281,6 +281,12 @@ export default function Home() {
               revenue to their personal brands.
             </p>
             <p data-reveal>
+              LeverBrands builds personal brand ecosystems for founders and
+              CEOs. A personal brand ecosystem is the system of positioning,
+              content, owned audience and offers that turns a founder&apos;s
+              attention into trust and revenue.
+            </p>
+            <p data-reveal>
               Today we work with founders, CEOs and executives across the UK,
               US, Europe and the Middle East. LinkedIn is where it started, but
               it's now one channel of many: short-form video, YouTube,
