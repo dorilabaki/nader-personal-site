@@ -31,11 +31,11 @@ const instrumentSerif = localFont({
 export const metadata: Metadata = {
   title: "Nader Alnajjar - Co-founder of LeverBrands | Personal Branding for Founders, CEOs & Executives",
   description:
-    "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. LinkedIn, short-form video, YouTube, newsletters and funnels. 1B+ client impressions. £20M+ attributed client revenue.",
+    "Nader Alnajjar is co-founder of LeverBrands. LeverBrands builds personal brand ecosystems for founders and CEOs. 1B+ client impressions. £20M+ client revenue. 15M+ followers grown.",
   openGraph: {
     title: "Nader Alnajjar - Co-founder of LeverBrands",
     description:
-      "Nader Alnajjar is the co-founder of LeverBrands. He helps founders, CEOs and executives build personal brands across LinkedIn, short-form video, YouTube and email. 1B+ client impressions. £20M+ attributed client revenue. 15M+ followers grown.",
+      "Nader Alnajjar is co-founder of LeverBrands. LeverBrands builds personal brand ecosystems for founders and CEOs. 1B+ client impressions. £20M+ client revenue. 15M+ followers grown.",
     type: "website",
     url: "https://www.nadernajjar.com",
   },
@@ -58,10 +58,10 @@ const personSchema = {
     name: "LeverBrands",
     url: "https://www.leverbrands.com",
     description:
-      "Personal branding agency for founders, CEOs and executives. Services span LinkedIn, short-form video, YouTube, Instagram, newsletters, lead magnets, funnels and content distribution.",
+      "LeverBrands builds personal brand ecosystems for founders and CEOs. A personal brand ecosystem is the system of positioning, content, owned audience and offers that turns a founder's attention into trust and revenue.",
   },
   description:
-    "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. Over the last three years LeverBrands clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue to their personal brands. He helps clients turn expertise into authority and attention into revenue through a 3-layer system (Attention, Nurture, Monetise) delivered across LinkedIn, short-form video, YouTube, Instagram and email.",
+    "Nader Alnajjar is co-founder of LeverBrands. LeverBrands builds personal brand ecosystems for founders and CEOs, run by one team across LinkedIn, short-form video, newsletters and email, lead magnets, funnels and offers. Clients' brands have generated 1B+ impressions, 15M+ followers and £20M+ in revenue.",
   knowsAbout: [
     "Personal Branding",
     "Executive Personal Branding",
@@ -108,7 +108,7 @@ const organizationSchema = {
     { "@type": "Person", name: "Tom Pearce" },
   ],
   description:
-    "LeverBrands is a London personal branding agency for founders, CEOs and executives, including founders building pipeline, CEOs building authority and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, content distribution, inbound and outbound systems, newsletters and email, lead magnets, funnels and offer development. Over the last three years clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue.",
+    "LeverBrands builds personal brand ecosystems for founders and CEOs. A personal brand ecosystem is the system of positioning, content, owned audience and offers that turns a founder's attention into trust and revenue. The three layers are Attention, Nurture and Monetise, underpinned by positioning. Based in London, it works with founders building pipeline, CEOs building authority and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, content distribution, inbound and outbound systems, newsletters and email, lead magnets, funnels and offer development. Over the last three years clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue.",
   knowsAbout: [
     "Personal Branding",
     "Executive Thought Leadership",

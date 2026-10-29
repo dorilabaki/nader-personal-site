@@ -8,7 +8,7 @@ import { LinkedinIcon } from "@/components/icons";
 export const metadata = {
   title: "Who is Nader Alnajjar? | Co-founder of LeverBrands",
   description:
-    "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. LinkedIn, short-form video, YouTube and email. 1B+ client impressions. £20M+ attributed client revenue.",
+    "Nader Alnajjar is co-founder of LeverBrands. LeverBrands builds personal brand ecosystems for founders and CEOs. 1B+ client impressions. £20M+ client revenue. 15M+ followers grown.",
   alternates: {
     canonical: "https://www.nadernajjar.com/about",
   },
@@ -40,7 +40,7 @@ const faqSchema = {
       name: "Who is Nader Alnajjar?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. He helps clients build authority, attract opportunities and turn attention into revenue across LinkedIn, short-form video, YouTube, Instagram and email. Over the last three years LeverBrands clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue to their personal brands.",
+        text: "Nader Alnajjar is co-founder of LeverBrands. LeverBrands builds personal brand ecosystems for founders and CEOs. He helps clients build authority, attract opportunities and turn attention into revenue across LinkedIn, short-form video, YouTube, Instagram and email. Over the last three years LeverBrands clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue to their personal brands.",
       },
     },
     {
@@ -48,7 +48,7 @@ const faqSchema = {
       name: "What is LeverBrands?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "LeverBrands is a London personal branding agency co-founded by Nader Alnajjar, Chris Donnelly and Tom Pearce. It works with founders building pipeline, CEOs and executives building authority, and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, distribution across its media network, inbound and outbound systems, newsletters, lead magnets, funnels and offer development. Clients have generated 1B+ impressions, 15M+ followers and £20M+ in attributed revenue over the last three years.",
+        text: "LeverBrands builds personal brand ecosystems for founders and CEOs. A personal brand ecosystem is the system of positioning, content, owned audience and offers that turns a founder's attention into trust and revenue. The three layers are Attention, Nurture and Monetise, underpinned by positioning. It is based in London and was co-founded by Nader Alnajjar, Chris Donnelly and Tom Pearce. It works with founders building pipeline, CEOs and executives building authority, and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, distribution across its media network, inbound and outbound systems, newsletters, lead magnets, funnels and offer development. Clients have generated 1B+ impressions, 15M+ followers and £20M+ in attributed revenue over the last three years.",
       },
     },
     {
@@ -123,8 +123,7 @@ export default function AboutPage() {
             Who is <span className="italic text-accent">Nader Alnajjar</span>?
           </h1>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl">
-            Co-founder of LeverBrands. Personal branding for founders, CEOs and
-            executives across LinkedIn, short-form video, YouTube and email.
+            Co-founder of LeverBrands. LeverBrands builds personal brand ecosystems for founders and CEOs.
             Based in London.
           </p>
         </div>
@@ -196,9 +195,12 @@ export default function AboutPage() {
             <h2 className="font-display text-3xl mb-4">Background</h2>
             <div className="space-y-4 text-text-secondary leading-[1.8]">
               <p>
-                Nader Alnajjar is the co-founder of LeverBrands, a personal
-                branding agency based at London Bridge that works with founders,
-                CEOs and executives across the UK, US, Europe and the Middle
+                Nader Alnajjar is co-founder of LeverBrands. LeverBrands builds
+                personal brand ecosystems for founders and CEOs. A personal
+                brand ecosystem is the system of positioning, content, owned
+                audience and offers that turns a founder&apos;s attention into
+                trust and revenue. The company is based at London Bridge and
+                works with clients across the UK, US, Europe and the Middle
                 East. He is known for helping brilliant people become impossible
                 to ignore, turning expertise into authority and attention into
                 revenue.
@@ -392,11 +394,11 @@ export default function AboutPage() {
               {[
                 {
                   q: "Who is Nader Alnajjar?",
-                  a: "Nader Alnajjar is the co-founder of LeverBrands, a London personal branding agency for founders, CEOs and executives. He helps clients build authority, attract opportunities and turn attention into revenue across LinkedIn, short-form video, YouTube, Instagram and email. Over the last three years LeverBrands clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue to their personal brands.",
+                  a: "Nader Alnajjar is co-founder of LeverBrands. LeverBrands builds personal brand ecosystems for founders and CEOs. He helps clients build authority, attract opportunities and turn attention into revenue across LinkedIn, short-form video, YouTube, Instagram and email. Over the last three years LeverBrands clients have generated 1B+ impressions, grown 15M+ followers and attributed £20M+ in revenue to their personal brands.",
                 },
                 {
                   q: "What is LeverBrands?",
-                  a: "LeverBrands is a London personal branding agency co-founded by Nader Alnajjar, Chris Donnelly and Tom Pearce. It works with founders building pipeline, CEOs and executives building authority, and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, distribution across its media network, inbound and outbound systems, newsletters, lead magnets, funnels and offer development. Clients have generated 1B+ impressions, 15M+ followers and £20M+ in attributed revenue over the last three years.",
+                  a: "LeverBrands builds personal brand ecosystems for founders and CEOs. A personal brand ecosystem is the system of positioning, content, owned audience and offers that turns a founder's attention into trust and revenue. The three layers are Attention, Nurture and Monetise, underpinned by positioning. It is based in London and was co-founded by Nader Alnajjar, Chris Donnelly and Tom Pearce. It works with founders building pipeline, CEOs and executives building authority, and exited founders repositioning for their next chapter. It is not only a LinkedIn agency: services include personal brand strategy, LinkedIn management, short-form video (ideas, filming and publishing), YouTube channel management, Instagram content, distribution across its media network, inbound and outbound systems, newsletters, lead magnets, funnels and offer development. Clients have generated 1B+ impressions, 15M+ followers and £20M+ in attributed revenue over the last three years.",
                 },
                 {
                   q: "Is LeverBrands just a LinkedIn agency?",

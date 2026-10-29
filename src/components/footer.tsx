@@ -18,9 +18,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed max-w-sm">
-              Co-founder of LeverBrands. Helping founders, CEOs and executives
-              build authority across LinkedIn, short-form video, YouTube and
-              email, and turn attention into revenue.
+              Co-founder of LeverBrands. LeverBrands builds personal brand
+              ecosystems for founders and CEOs.
             </p>
             <div className="flex gap-2 mt-6">
               {[
